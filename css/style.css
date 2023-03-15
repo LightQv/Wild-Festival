@@ -1,9 +1,12 @@
 :root {
     box-sizing: border-box;
     --backgroundColor: rgb(254, 254, 254);
+    --backgroundColorAlt: rgb(222, 200, 0);
     --mainTitleColor: rgb(222, 200, 0);
-    --mainColorHover: rgb(222, 200, 0);
+    --mainTitleColorAlt: rgb(254, 254, 254);
+    --mainColor: rgb(222, 200, 0);
     --textColor: rgb(1, 1, 1);
+    --textColorAlt: rgb(254, 254, 254);
 }
 
 html {
@@ -51,7 +54,7 @@ nav>.navIcon {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: var(--mainColorHover);
+    background-color: var(--backgroundColorAlt);
     margin: 6px 0px;
     transition: 0.4s;
 }
@@ -69,26 +72,45 @@ nav>.navIcon {
 }
 
 nav>.mobileNav {
+    margin-top: 13vh;
     margin-left: 15vw;
-    width: 100%;
-    min-height: 100vh;
-    /* display: flex;
+    padding-top: 5vh;
+    position: fixed;
+    left: 100%;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-around;
 }
 
 .mobileNav li {
-    color: var(--mainColorHover);
+    color: var(--mainTitleColorAlt);
+    list-style-type: none;
 }
 
 .mobileNav li a {
-    color: var(--mainColorHover);
+    color: var(--mainTitleColorAlt);
     text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .mobileNav li h4 {
-    color: var(--mainColorHover);
+    margin-top: 0;
+    line-height: normal;
     font-weight: normal;
+    font-size: 1.5rem;
+}
+
+nav.is-active {
+    background-color: var(--backgroundColorAlt);
+    background-blend-mode: hue;
+    opacity: 90%;
+    height: 100vh;
+}
+
+nav>.mobileNav.is-active {
+    left: 0;
+    transition: 0.4s;
 }
 
 /* Fin Menu-Burger */
