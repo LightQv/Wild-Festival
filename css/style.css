@@ -23,23 +23,84 @@ body {
 /* Debut Menu-Burger */
 
 nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav>.navIcon {
+    display: flex;
+    justify-content: right;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 1rem;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--mainColorHover);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active .bar {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active:after {
+    background-color: var(--backgroundColor);
+}
+
+nav>.mobileNav {
+    margin-left: 15vw;
+    width: 100%;
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.mobileNav li {
+    color: var(--mainColorHover);
+}
+
+.mobileNav li a {
+    color: var(--mainColorHover);
+    text-decoration: none;
+}
+
+.mobileNav li h4 {
+    color: var(--mainColorHover);
+    font-weight: normal;
 }
 
 /* Fin Menu-Burger */
-/* Début Home Page */
+/* Début Header */
 
-main {
+header {
     color: var(--mainTitleColor);
     line-height: normal;
 }
 
 .homePage {
-    margin: 25vh 15vw 0 15vw;
-}
-
-.burger-icon {
-    width: 5vh;
+    margin: 22vh 15vw 0 15vw;
 }
 
 .homePage>h1 {
@@ -58,9 +119,12 @@ main {
     font-weight: normal;
 }
 
-.down-arrow {
-    margin: 0;
-    width: 5vh;
-}
+/* Fin Header */
 
-/* Fin Home Page */
+/* .down-arrow {
+    width: 5vh;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+} */
