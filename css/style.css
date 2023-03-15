@@ -1,31 +1,66 @@
 :root {
     box-sizing: border-box;
-    --backgroundColor: var(rgb(254, 254, 254));
-    --mainTitleColor: var(rgb(222, 200, 0));
-    --mainColorHover: var(rgb(222, 200, 0));
-    --textColor: var(rgb(1, 1, 1));
+    --backgroundColor: rgb(254, 254, 254);
+    --mainTitleColor: rgb(222, 200, 0);
+    --mainColorHover: rgb(222, 200, 0);
+    --textColor: rgb(1, 1, 1);
+}
+
+html {
+    background-image: url("/img/home-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 body {
     margin: 0;
     line-height: 1.5;
+    font-family: Helvetica;
 }
+
+/* Debut Menu-Burger */
 
 nav {
     display: none;
 }
 
-.welcomePage {
-    background-image: url("/img/home-background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+/* Fin Menu-Burger */
+/* Début Home Page */
+
+main {
+    color: var(--mainTitleColor);
+    line-height: normal;
 }
 
-.welcomePage div {
-    color: var(--mainTitleColor);
+.homePage {
+    margin: 25vh 15vw 0 15vw;
+}
+
+.burger-icon {
+    width: 5vh;
+}
+
+.homePage>h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.homePage>h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.homePage>h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .down-arrow {
-    width: 10%;
+    margin: 0;
+    width: 5vh;
 }
+
+/* Fin Home Page */
