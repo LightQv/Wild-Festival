@@ -2,6 +2,7 @@
     box-sizing: border-box;
     --backgroundColor: rgb(254, 254, 254);
     --backgroundColorAlt: rgb(222, 200, 0);
+    --backgroundColorAltTransparent: rgba(222, 200, 0, 0.9);
     --mainTitleColor: rgb(222, 200, 0);
     --mainTitleColorAlt: rgb(254, 254, 254);
     --mainColor: rgb(222, 200, 0);
@@ -102,15 +103,17 @@ nav>.mobileNav {
 }
 
 nav.is-active {
-    background-color: var(--backgroundColorAlt);
-    background-blend-mode: hue;
-    opacity: 90%;
+    background-color: var(--backgroundColorAltTransparent);
     height: 100vh;
 }
 
 nav>.mobileNav.is-active {
     left: 0;
     transition: 0.4s;
+}
+
+.welcomePage.is-inactive {
+    display: none;
 }
 
 /* Fin Menu-Burger */
