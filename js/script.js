@@ -34,10 +34,19 @@ function findDate() {
     const textMinute = Math.floor((gap % hour) / minute);
     const textSecond = Math.floor((gap % minute) / second);
 
-    document.querySelector('.day').innerHTML = textDay + "J"
-    document.querySelector('.hour').innerHTML = textHour
-    document.querySelector('.minute').innerHTML = textMinute
-    document.querySelector('.second').innerHTML = textSecond
+    //Funtion Number under ten
+    function underTen(number) {
+        if (number < 10) {
+            return `0${number}`
+        } else {
+            return `${number}`
+        }
+    }
+
+    document.querySelector('.day').innerHTML = underTen(textDay) + "J"
+    document.querySelector('.hour').innerHTML = underTen(textHour)
+    document.querySelector('.minute').innerHTML = underTen(textMinute)
+    document.querySelector('.second').innerHTML = underTen(textSecond)
 };
 
 const countdown = findDate();
