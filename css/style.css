@@ -131,6 +131,7 @@ header {
 .homePage>h1 {
     margin: 0;
     font-size: 2.5rem;
+
 }
 
 .homePage>h2 {
@@ -144,6 +145,20 @@ header {
     font-weight: normal;
 }
 
+/* Début Countdown */
+
+section .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    line-height: 0%;
+}
+
+section .countdown div:not(:first-of-type) {
+    margin-left: 1vw;
+}
+
+/* Fin Countdown */
 /* Fin Header */
 
 /* .down-arrow {
