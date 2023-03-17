@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     box-sizing: border-box;
     --backgroundColor: rgb(254, 254, 254);
     --backgroundColorAlt: rgb(222, 200, 0);
+    --backgroundColorAltLight: rgb(249, 244, 202);
     --backgroundColorAltTransparent: rgba(222, 200, 0, 0.9);
     --mainTitleColor: rgb(222, 200, 0);
     --mainTitleColorAlt: rgb(254, 254, 254);
@@ -10,18 +17,18 @@
     --textColorAlt: rgb(254, 254, 254);
 }
 
-html {
+body {
+    margin: 0;
+    line-height: 1.5;
+    font-family: Helvetica;
+}
+
+.indexBody {
     background-image: url("/img/home-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-}
-
-body {
-    margin: 0;
-    line-height: 1.5;
-    font-family: Helvetica;
 }
 
 /* Debut Menu-Burger */
@@ -80,12 +87,12 @@ nav>.mobileNav {
     left: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .mobileNav li {
     color: var(--mainTitleColorAlt);
     list-style-type: none;
+    margin-bottom: 1.5rem;
 }
 
 .mobileNav li a {
@@ -96,10 +103,9 @@ nav>.mobileNav {
 }
 
 .mobileNav li h4 {
-    margin-top: 0;
-    line-height: normal;
     font-weight: normal;
     font-size: 1.5rem;
+    line-height: normal;
 }
 
 nav.is-active {
@@ -116,10 +122,14 @@ nav>.mobileNav.is-active {
     display: none;
 }
 
+.down-arrow.is-inactive {
+    display: none;
+}
+
 /* Fin Menu-Burger */
 /* Début Header */
 
-header {
+.welcomePage {
     color: var(--mainTitleColor);
     line-height: normal;
 }
@@ -129,18 +139,15 @@ header {
 }
 
 .homePage>h1 {
-    margin: 0;
     font-size: 2.5rem;
 
 }
 
 .homePage>h2 {
-    margin: 0;
     font-size: 2.5rem;
 }
 
 .homePage>h3 {
-    margin: 0;
     font-size: 1.5rem;
     font-weight: normal;
 }
@@ -151,7 +158,6 @@ section .countdown {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    line-height: 0%;
 }
 
 section .countdown div:not(:first-of-type) {
@@ -161,10 +167,15 @@ section .countdown div:not(:first-of-type) {
 /* Fin Countdown */
 /* Fin Header */
 
-/* .down-arrow {
+
+/* Début Footer */
+
+.down-arrow {
     width: 5vh;
     display: block;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-} */
+}
+
+/* Fin Footer */
