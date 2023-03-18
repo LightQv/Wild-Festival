@@ -1,22 +1,20 @@
-/* Début du Script menu-burger */
+/* Début du Script Menu-burger */
 
 const menuBurger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobileNav');
 const mobileMenuBackground = document.querySelector('nav');
-const welcomePage = document.querySelector('.welcomePage');
-const downArrow = document.querySelector('.down-arrow');
+const pageContainer = document.querySelector('.pageContainer');
 
 menuBurger.addEventListener('click', function () {
     menuBurger.classList.toggle('is-active');
     mobileMenu.classList.toggle('is-active');
     mobileMenuBackground.classList.toggle('is-active');
-    welcomePage.classList.toggle('is-inactive');
-    downArrow.classList.toggle('is-inactive');
+    pageContainer.classList.toggle('is-inactive');
 });
 
-/* Fin du Script menu-burger */
+/* Fin du Script Menu-burger */
 
-/* Debut du Script countdown */
+/* Debut du Script Countdown */
 
 function findDate() {
     //Date parameters
@@ -54,4 +52,17 @@ function findDate() {
 const countdown = findDate();
 setInterval(findDate, 1000);
 
-/* Fin du Script countdown */
+/* Fin du Script Countdown */
+
+/* Début du Script Arrow */
+
+// const clickDownArrow = document.querySelector('.down-arrow');
+// const displayWelcome = document.querySelector('.welcomePage');
+// const displayDescription = document.querySelector('.descriptionPage');
+
+// clickDownArrow.addEventListener('click', function () {
+//     displayWelcome.classList.toggle('is-inactive');
+//     displayDescription.classList.toggle('is-active');
+// });
+
+/* Fin du Script Arrow */

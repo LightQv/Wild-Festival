@@ -33,14 +33,9 @@ body {
 
 /* Debut Menu-Burger */
 
-nav {
-    display: flex;
-    flex-direction: column;
-}
-
 nav>.navIcon {
-    display: flex;
-    justify-content: right;
+    position: absolute;
+    right: 1vh;
 }
 
 .hamburger {
@@ -48,7 +43,8 @@ nav>.navIcon {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
     appearance: none;
     background: none;
     outline: none;
@@ -80,9 +76,8 @@ nav>.navIcon {
 }
 
 nav>.mobileNav {
-    margin-top: 13vh;
+    margin-top: 18vh;
     margin-left: 15vw;
-    padding-top: 5vh;
     position: fixed;
     left: 100%;
     display: flex;
@@ -118,7 +113,7 @@ nav>.mobileNav.is-active {
     transition: 0.4s;
 }
 
-.welcomePage.is-inactive {
+.pageContainer.is-inactive {
     display: none;
 }
 
@@ -127,20 +122,22 @@ nav>.mobileNav.is-active {
 }
 
 /* Fin Menu-Burger */
-/* Début Header */
+
+/* Début index.html */
+/* Début section 1 */
 
 .welcomePage {
     color: var(--mainTitleColor);
     line-height: normal;
+    height: 100vh;
 }
 
 .homePage {
-    margin: 22vh 15vw 0 15vw;
+    padding: 30vh 15vw 0 15vw;
 }
 
 .homePage>h1 {
     font-size: 2.5rem;
-
 }
 
 .homePage>h2 {
@@ -152,30 +149,95 @@ nav>.mobileNav.is-active {
     font-weight: normal;
 }
 
+.down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1rem;
+    width: 35px;
+}
+
+.down-arrow.is-inactive {
+    display: none;
+}
+
 /* Début Countdown */
 
 section .countdown {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    font-size: 1.5rem;
 }
 
 section .countdown div:not(:first-of-type) {
-    margin-left: 1vw;
+    margin-left: 0.5vw;
 }
 
 /* Fin Countdown */
-/* Fin Header */
+/* Fin Section 1 */
 
+/* Début Scroll effect */
 
-/* Début Footer */
-
-.down-arrow {
-    width: 5vh;
-    display: block;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+.pageContainer {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-/* Fin Footer */
+.welcomePage,
+.descriptionPage {
+    scroll-snap-align: center;
+}
+
+/* Fin Scroll effect */
+
+/* Début Section 2 */
+
+.descriptionPage {
+    color: var(--mainTitleColor);
+    line-height: normal;
+    height: 100vh;
+}
+
+.scrollHomePage {
+    padding: 13vh 15vw 0 15vw;
+}
+
+.scrollHomeTitle>h1 {
+    font-size: 2.5rem;
+}
+
+.scrollHomeTitle>h2 {
+    font-size: 2.5rem;
+    line-height: normal;
+}
+
+.scrollHomeContent {
+    margin-top: 1.5vh;
+}
+
+.artistSummary {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.eventSummary {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 25vh;
+}
+
+/* Fin Section 2 */
+
+/* Début Arrow cliquable */
+
+/* .welcomePage.is-inactive {
+    display: none;
+}
+
+.descriptionPage.is-active {
+    display: initial;
+} */
+
+/* Fin Arrow cliquable */
+/* Fin index.html */
