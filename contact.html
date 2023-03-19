@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Projet 1</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navIcon">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="mobileNav">
+        <li>
+          <a href="index.html">Accueil</a>
+          <h4>Décompte!</h4>
+        </li>
+        <li>
+          <a href="prog1.html">Program'</a>
+          <h4>Les artistes.</h4>
+        </li>
+        <li>
+          <a href="billetterie.html">Billetterie</a>
+          <h4>Réserve ta place!</h4>
+        </li>
+        <li>
+          <a href="contact.html">Perdus ?</a>
+          <h4>Contact & Quizz</h4>
+        </li>
+      </div>
+    </nav>
+    <div class="pageContainer">
+      <header>
+        <!-- <img class="icon-burger" src="assets\icon-burger-yellow.png" alt="icon-menu"> -->
+        <h2> Perdu? </h2>
+        <h1> Contact </h1>
+      </header>
+
+      <main>
+        <section class="form" id="contact-form">
+          <h3> Envoie nous un message </h3>
+          <form>
+          <!-- </div> -->
+          <div>
+            <label for="lastname"></label>
+            <input type="text" name="lastname" id="lastname" placeholder="Nom">
+          </div>
+          <div>
+            <label for="firstname"> </label>
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+          </div>
+          <div>
+            <label for="email"> </label>
+            <input type="email" name="email" id="email" placeholder="Mail">
+          </div>
+          <div>
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Ton message"></textarea>
+          </div>
+          </form>
+          <button class="button" type="button"> Envoyer </button>
+        </section>
+
+        <section id="quizz">
+          <h1> Quizz </h1>
+          <h3> Si tu ne sais pas quelle formule choisir, tu peux répondre à ces quelques questions : </h3>
+          <p> Question 1 <br />
+            "" </p>
+          <div id="quizz">
+            <article> Réponse A </article>
+            <article> Réponse B </article>
+            <article> Réponse C </article>
+            <article> Réponse D </article>
+          </div>
+          <div>
+          <button class="button" type="button"> Répondre </button>
+          </div>
+        </section> 
+      </main>
+      <footer class="footer">
+        <img src="assets/icon-facebook.png" alt="facebook icon">
+        <img src="assets/icon-instagram.png" alt="instagram icon">
+        <img src="assets/icon-twitter.png" alt="twitter icon">
+      </footer>
+    </div>
+  </body>
+</html>

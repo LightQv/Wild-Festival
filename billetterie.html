@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Projet 1</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navIcon">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="mobileNav">
+        <li>
+          <a href="index.html">Accueil</a>
+          <h4>Décompte!</h4>
+        </li>
+        <li>
+          <a href="prog1.html">Program'</a>
+          <h4>Les artistes.</h4>
+        </li>
+        <li>
+          <a href="billetterie.html">Billetterie</a>
+          <h4>Réserve ta place!</h4>
+        </li>
+        <li>
+          <a href="contact.html">Perdus ?</a>
+          <h4>Contact & Quizz</h4>
+        </li>
+      </div>
+    </nav>
+      <!-- <img class="icon-burger" src="assets\icon-burger-yellow.png" alt="icon-menu"> -->
+  <div class="pageContainer">
+      <!-- <section class="welcomePage">
+        <div class="homePage"> -->
+    <header>
+      <h2> Billetterie </h2>
+      <h1> Réserve ta place! </h1>
+    </header>
+
+    <main>
+      <section id="formules"> 
+        <h3> Les formules </h3>
+        <div id="cards-grid">
+          <div class="card" id="card1night">
+            <div class="card-side card-front">
+              <div class="container">
+                <p>Pass</p>
+                <p>"Une nuit"</p>
+                <img src="assets\icon-touch.png" alt="icon-touch">
+              </div>
+            </div>
+            <div class="card-side card-back">
+              <div class="container">
+                <p> Prix : 30€ </p>
+                <p> Entrée pour une nuit, au choix entre le samedi et le dimanche</p>
+                <p> Une consommation offerte </p>
+              </div>
+            </div>
+          </div> 
+          <div class="card" id="card2night">
+            <div class="card-side card-front">
+              <div class="container">
+                <p>Pass</p>
+                <p>"Deux nuits"</p>
+                <img src="assets\icon-touch.png" alt="icon-touch">
+              </div>
+            </div>
+            <div class="card-side card-back"> 
+              <div class="container">          
+                <p> Prix : 50€ </p>
+                <p> Entrée pour tout le week-end</p>
+                <p> Deux consommations offertes à utiliser au choix sur l'ensemble des deux nuits </p>           
+              </div>
+            </div>
+          </div> 
+          <div class="card" id="card-all-inclusive">
+            <div class="card-side card-front">
+              <div class="container">
+                <p>Pass</p>
+                <p>"La totale"</p>
+                <img src="assets\icon-touch.png" alt="icon-touch">
+              </div>
+            </div>
+            <div class="card-side card-back">
+              <div class="container">
+                <p> Prix : 80€ </p>
+                <p> Entrée pour tout le week-end avec un accès VIP</p>
+                <p> Quatre consommations offertes </p>
+                <p> Un t-shirt collecter de l'événement </p>
+                <p> Une chance d'obtenir une place backstage pour l'artiste de ton choix </p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <img class = "down-arrow" src="assets\icon-down-arrow.png" alt="down arrow">
+
+      <section class="form" id="option-form">
+        <h3> C'est parti! </h3>
+        <form>
+          <div>
+            <select name="choix de la formule" id="choix de la formule">
+              <option value="default value"> Sélectionne ta formule </option>
+              <option value="Une nuit"> Pass "Une nuit" </option>
+              <option value="Deux nuits"> Pass "Deux nuits" </option>
+              <option value="La totale"> Pass "La totale" </option>
+            </select>
+          </div>
+          <div>
+            <label for="lastname"></label>
+            <input type="text" name="lastname" id="lastname" placeholder="Nom">
+          </div>
+          <div>
+            <label for="firstname"> </label>
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+          </div>
+          <div>
+            <label for="email"> </label>
+            <input type="email" name="email" id="email" placeholder="Mail">
+          </div>
+        </form>
+        <button class="button" type="button"> Envoyer </button>
+      </section>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
+
