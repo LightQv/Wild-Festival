@@ -5,7 +5,6 @@
 }
 
 :root {
-    box-sizing: border-box;
     --backgroundColor: rgb(254, 254, 254);
     --backgroundColorAlt: rgb(222, 200, 0);
     --backgroundColorAltLight: rgb(249, 244, 202);
@@ -24,7 +23,7 @@ body {
 }
 
 .indexBody {
-    background-image: url("/img/home-background.jpg");
+    background-image: url("/Assets/home-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -114,10 +113,6 @@ nav>.mobileNav.is-active {
 }
 
 .pageContainer.is-inactive {
-    display: none;
-}
-
-.down-arrow.is-inactive {
     display: none;
 }
 
@@ -213,16 +208,4 @@ section .countdown div:not(:first-of-type) {
 }
 
 /* Fin Section 2 */
-
-/* Début Arrow cliquable */
-
-/* .welcomePage.is-inactive {
-    display: none;
-}
-
-.descriptionPage.is-active {
-    display: initial;
-} */
-
-/* Fin Arrow cliquable */
 /* Fin index.html */
