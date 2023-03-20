@@ -22,7 +22,193 @@ body {
     font-family: Helvetica;
 }
 
+.indexBody {
+    background-image: url("/Assets/home-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+/* Debut Menu-Burger */
+
+nav>.navIcon {
+    position: absolute;
+    right: 1vh;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--backgroundColorAlt);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active .bar {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active:after {
+    background-color: var(--backgroundColor);
+}
+
+nav>.mobileNav {
+    margin-top: 18vh;
+    margin-left: 15vw;
+    position: fixed;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileNav li {
+    color: var(--mainTitleColorAlt);
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+.mobileNav li a {
+    color: var(--mainTitleColorAlt);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.mobileNav li h4 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+nav.is-active {
+    background-color: var(--backgroundColorAltTransparent);
+    height: 100vh;
+}
+
+nav>.mobileNav.is-active {
+    left: 0;
+    transition: 0.4s;
+}
+
+.pageContainer.is-inactive {
+    display: none;
+}
+
+/* Fin Menu-Burger */
+
+/* Début index.html */
+/* Début section 1 */
+
+.welcomePage {
+    color: var(--mainTitleColor);
+    line-height: normal;
+    height: 100vh;
+}
+
+.homePage {
+    padding: 30vh 15vw 0 15vw;
+}
+
+.homePage>h1 {
+    font-size: 2.5rem;
+}
+
+.homePage>h2 {
+    font-size: 2.5rem;
+}
+
+.homePage>h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1rem;
+    width: 35px;
+}
+
+.down-arrow.is-inactive {
+    display: none;
+}
+
+/* Début Countdown */
+
+section .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 1.5rem;
+}
+
+section .countdown div:not(:first-of-type) {
+    margin-left: 0.5vw;
+}
+
+/* Fin Countdown */
+/* Fin Section 1 */
+
+/* Début Section 2 */
+
+.descriptionPage {
+    color: var(--mainTitleColor);
+    line-height: normal;
+    height: 100vh;
+}
+
+.scrollHomePage {
+    padding: 13vh 15vw 0 15vw;
+}
+
+.scrollHomeTitle>h1 {
+    font-size: 2.5rem;
+}
+
+.scrollHomeTitle>h2 {
+    font-size: 2.5rem;
+    line-height: normal;
+}
+
+.scrollHomeContent {
+    margin-top: 1.5vh;
+}
+
+.artistSummary {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.eventSummary {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 25vh;
+}
+
+/* Fin Section 2 */
+/* Fin index.html */
 
 
 /*page Prog*/
@@ -150,6 +336,7 @@ body {
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
 }
+
 
 
 
