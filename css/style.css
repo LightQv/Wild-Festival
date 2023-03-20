@@ -176,21 +176,6 @@ section .countdown div:not(:first-of-type) {
 /* Fin Countdown */
 /* Fin Section 1 */
 
-/* Début Scroll effect */
-
-.pageContainer {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-.welcomePage,
-.descriptionPage {
-    scroll-snap-align: center;
-}
-
-/* Fin Scroll effect */
-
 /* Début Section 2 */
 
 .descriptionPage {

@@ -53,16 +53,3 @@ const countdown = findDate();
 setInterval(findDate, 1000);
 
 /* Fin du Script Countdown */
-
-/* Début du Script Arrow */
-
-// const clickDownArrow = document.querySelector('.down-arrow');
-// const displayWelcome = document.querySelector('.welcomePage');
-// const displayDescription = document.querySelector('.descriptionPage');
-
-// clickDownArrow.addEventListener('click', function () {
-//     displayWelcome.classList.toggle('is-inactive');
-//     displayDescription.classList.toggle('is-active');
-// });
-
-/* Fin du Script Arrow */
