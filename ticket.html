@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>WildFest Ticket</title>
-  </head>
 
-  <body>
-    <nav>
-      <div class="navIcon">
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
-      </div>
-      <div class="mobileNav">
-        <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>WildFest Ticket</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navIcon">
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </div>
+    <div class="mobileNav">
+      <ul>
         <li>
           <a href="index.html">Accueil</a>
           <h4>Décompte!</h4>
@@ -32,28 +33,32 @@
         <li>
           <a href="contact.html">Perdus ?</a>
           <h4>Contact & Quizz</h4>
-        </li> </ul>
-      </div>
-    </nav>
-    <header>
-      <h2> Merci, </h2>
-      <h1> A bientôt! </h1>
-    </header>
-    <main>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="pageContainer">
+      <section>
+        <h2>Merci,</h2>
+        <h1>À bientôt!</h1>
+      </section>
       <div id="ticket">
         <h3> Voici ton billet </h3>
-        <img src="assets\QR_code.png" alt="QR Code">
+        <img src="Assets/Icons/QR_code.png" alt="QR Code">
         <!--/*fonctionnalité à implémenter : définir les champs suivant en fonction de ce que l'utilisateur a rentré en input. -->
         <h3>Formule choisie <br>
-            Nom Prénom <br>
-            Mail </h3> 
+          Nom Prénom <br>
+          Mail </h3>
       </div>
-    </main>
-    <footer class="footer">
-      <img src="assets/icon-facebook.png" alt="facebook icon">
-      <img src="assets/icon-instagram.png" alt="instagram icon">
-      <img src="assets/icon-twitter.png" alt="twitter icon">
-    </footer>
-    <script src="js/ticket.js"></script>
-  </body>
+    </div>
+  </main>
+  <footer class="footer">
+    <img src="Assets/Icons/icon-facebook.png" alt="facebook icon">
+    <img src="Assets/Icons/icon-instagram.png" alt="instagram icon">
+    <img src="Assets/Icons/icon-twitter.png" alt="twitter icon">
+  </footer>
+  <script src="js/ticket.js"></script>
+</body>
+
 </html>

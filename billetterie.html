@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>WildFest Billetterie</title>
-  </head>
-  <body>
-    <nav>
-      <div class="navIcon">
-        <button class="hamburger">
-          <div class="bar"></div>
-        </button>
-      </div>
-      <div class="mobileNav">
-        <ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>WildFest Billetterie</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navIcon">
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </div>
+    <div class="mobileNav">
+      <ul>
         <li>
           <a href="index.html">Accueil</a>
           <h4>Décompte!</h4>
@@ -31,16 +33,17 @@
         <li>
           <a href="contact.html">Perdus ?</a>
           <h4>Contact & Quizz</h4>
-        </li> </ul>
-      </div>
-    </nav>
-    <header>
-      <h2> Billetterie </h2>
-      <h1> Réserve ta place! </h1>
-    </header>
-
-    <main>
-      <section id="formules"> 
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="pageContainer">
+      <section>
+        <h2> Billetterie </h2>
+        <h1> Réserve ta place! </h1>
+      </section>
+      <section id="formules">
         <h3> Les formules </h3>
         <div id="cards-grid">
           <div class="card" id="card1night">
@@ -58,29 +61,29 @@
                 <p> Une consommation offerte </p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="card" id="card2night">
             <div class="card-side card-front">
               <div class="container">
                 <p>Pass</p>
                 <p>"Deux nuits"</p>
-                <img src="assets/icon-touch.png" alt="icon-touch">
+                <img src="Assets/Icons/icon-touch.png" alt="icon-touch">
               </div>
             </div>
-            <div class="card-side card-back"> 
-              <div class="container">          
+            <div class="card-side card-back">
+              <div class="container">
                 <p> Prix : 50€ </p>
                 <p> Entrée pour tout le week-end</p>
-                <p> Deux consommations offertes à utiliser au choix sur l'ensemble des deux nuits </p>           
+                <p> Deux consommations offertes à utiliser au choix sur l'ensemble des deux nuits </p>
               </div>
             </div>
-          </div> 
+          </div>
           <div class="card" id="card-all-inclusive">
             <div class="card-side card-front">
               <div class="container">
                 <p>Pass</p>
                 <p>"La totale"</p>
-                <img src="assets/icon-touch.png" alt="icon-touch">
+                <img src="Assets/Icons/icon-touch.png" alt="icon-touch">
               </div>
             </div>
             <div class="card-side card-back">
@@ -92,10 +95,10 @@
                 <p> Une chance d'obtenir une place backstage pour l'artiste de ton choix </p>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
       </section>
-      <img class = "down-arrow-formules" src="assets/icon-down-arrow.png" alt="down arrow">
+      <img class="down-arrow-formules" src="Assets/Icons/icon-down-arrow.png" alt="down arrow">
 
       <section class="form" id="option-form">
         <h3> C'est parti! </h3>
@@ -110,11 +113,13 @@
           </div>
           <div>
             <label for="lastname"></label>
-            <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern = "[A-Za-z]" maxlength="20">
+            <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern="[A-Za-z]"
+              maxlength="20">
           </div>
           <div>
             <label for="firstname"> </label>
-            <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern = "[A-Za-z]" maxlength="20">
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern="[A-Za-z]"
+              maxlength="20">
           </div>
           <div>
             <label for="email"> </label>
@@ -123,8 +128,9 @@
           <button class="button" type="button"> Envoyer </button>
         </form>
       </section>
-    </main>
-    <script src="js/billetterie.js"></script>
-  </body>
-</html>
+    </div>
+  </main>
+  <script src="js/billetterie.js"></script>
+</body>
 
+</html>

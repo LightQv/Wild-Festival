@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +33,7 @@ body {
 /* Debut Menu-Burger */
 
 nav>.navIcon {
-    position: absolute;
+    position: fixed;
     right: 1vh;
 }
 
@@ -115,6 +113,10 @@ nav>.mobileNav.is-active {
 }
 
 .pageContainer.is-inactive {
+    display: none;
+}
+
+.footer.is-inactive {
     display: none;
 }
 
@@ -204,37 +206,72 @@ section .countdown div:not(:first-of-type) {
 }
 
 .eventSummary {
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.5;
-    margin-top: 25vh;
+    margin-top: 26vh;
 }
 
 /* Fin Section 2 */
 /* Fin index.html */
 
+@media screen and (min-width: 1024px) {
+    .homePage>h1 {
+        font-size: 3rem;
+    }
 
-/*page Prog*/
+    section .countdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        font-size: 4rem;
+    }
 
-.dayTitle {
-    padding: 1rem;
+    .homePage>h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-align: end;
+    }
+
+    .artistSummary {
+        line-height: 1.2;
+        font-size: 2rem;
+        margin-top: 4vh;
+    }
+
+    .eventSummary {
+        font-weight: normal;
+        line-height: normal;
+        font-size: 1rem;
+        margin-top: 44vh;
+    }
 }
+
+
+/* Début programmation.html */
 
 #day1 {
     height: 100vh;
 }
+
 #day2 {
     height: 100vh;
 }
 
-/*slider*/
+.dayTitle {
+    padding: 3vh 5vw 1vh 5vw;
+}
+
+/* Début Slider */
 
 .slider-wrapper {
     width: 100%;
-    margin: 0.1rem;
+    margin: 0rem;
     position: relative;
     overflow-x: scroll;
     scroll-snap-align: start;
 }
+
 .slides-container {
     height: 70vh;
     width: 100%;
@@ -246,31 +283,39 @@ section .countdown div:not(:first-of-type) {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
+
 #slide1 {
     background-image: url("/Assets/Pictures/rockband1.jpeg");
 }
+
 #slide2 {
     background-image: url("/Assets/Pictures/rockband2.webp");
 }
+
 #slide3 {
     background-image: url("/Assets/Pictures/rockband3.jpg");
 }
+
 #slide4 {
     background-image: url("/Assets/Pictures/rockband4.1.jpg");
 }
+
 #slide5 {
     background-image: url("/Assets/Pictures/machines.jpg");
 }
+
 #slide6 {
     background-image: url("/Assets/Pictures/techno4.jpg");
 }
+
 #slide7 {
     background-image: url("/Assets/Pictures/djscript.jpg");
 }
+
 #slide8 {
     background-image: url("/Assets/Pictures/techno3.jpg");
 }
-  
+
 .slide {
     background-size: cover;
     background-repeat: no-repeat;
@@ -291,11 +336,15 @@ section .countdown div:not(:first-of-type) {
     height: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
-    
+
 }
 
 .slideText {
-    padding: 1rem;
+    padding: 3vh 5vw 1vh 5vw;
+}
+
+.slideText>p {
+    line-height: 0.5;
 }
 
 .slide-arrow {
@@ -314,45 +363,51 @@ section .countdown div:not(:first-of-type) {
     opacity: 0.5;
     transition: opacity 100ms;
 }
+
 .slide-arrow:hover,
 .slide-arrow:focus {
     opacity: 1;
 }
+
 #slide-arrow-prev {
     left: 0;
     padding-left: 0.25rem;
     border-radius: 0 2rem 2rem 0;
 }
+
 #slide-arrow-next {
     right: 0;
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
 }
+
 #slide-arrow-prev2 {
     left: 0;
     padding-left: 0.25rem;
     border-radius: 0 2rem 2rem 0;
 }
+
 #slide-arrow-next2 {
     right: 0;
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
 }
 
-/* Début de la page billeterie */
+/* Fin programmation.html */
+
+/* Début billeterie.html */
 
 header h2 {
     margin-top: 1.5em;
 }
 
-header h2
-#formules {
+header h2 #formules {
     margin-top: 2rem;
 }
 
- #formules h3 {
+#formules h3 {
     margin-bottom: 2em;
- }
+}
 
 #formules img {
     width: 2em;
@@ -374,7 +429,7 @@ header h2
 .card {
     transition: all 0.3s ease;
     transform-style: preserve-3d;
-    position:relative;
+    position: relative;
 }
 
 .card-side {
@@ -383,7 +438,7 @@ header h2
     background-color: var(--backgroundColorAltLight);
     border-radius: 3em;
     padding: 2em;
-    width : 100%;
+    width: 100%;
     height: 100%;
     /*min-height: 250px;*/
 }
@@ -396,7 +451,7 @@ header h2
     backface-visibility: hidden;
     transform: rotateY(180deg);
     background-color: var(--backgroundColorAlt);
-} 
+}
 
 .container {
     display: flex;
@@ -406,17 +461,18 @@ header h2
     height: 100%;
 }
 
-.container > p {
+.container>p {
     padding: 0.5em;
 }
 
-.container > img {
+.container>img {
     margin-top: 0.5em;
 }
 
 .container-back {
     padding-top: 1em;
 }
+
 .container-back p {
     padding: 0.5em;
     margin-bottom: 0;
@@ -428,16 +484,18 @@ header h2
 
 /* Fin des flip cards  */
 
-.down-arrow-formules, .icon-burger {
+.down-arrow-formules,
+.icon-burger {
     width: 4em;
     margin-top: 2em;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+}
 
 /* Début de la mise en page générale des formulaires  */
 
 .form form {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
@@ -458,7 +516,8 @@ header h2
 
 /* Début du formulaire pour le choix du Pass */
 
-#option-form div > select, #option-form input {
+#option-form div>select,
+#option-form input {
     width: 100%;
     background-color: var(--backgroundColorAltLight);
     border-radius: 3em;
@@ -476,7 +535,7 @@ header h2
 
 #option-form h3 {
     margin-bottom: 1.5em;
-}  
+}
 
 /* Fin du formulaire pour le choix du Pass */
 
@@ -484,16 +543,18 @@ header h2
 
 .form h3 {
     margin-bottom: 1.5em;
-}  
+}
 
 #contact-form input {
     width: 100%;
     background-color: var(--backgroundColorAltLight);
     border-radius: 3em;
     padding: 0.2em;
-    padding-left: 0.5em;}
+    padding-left: 0.5em;
+}
 
-#contact-form div:nth-of-type(3), #contact-form div:last-of-type {
+#contact-form div:nth-of-type(3),
+#contact-form div:last-of-type {
     grid-column: 1/3;
 }
 
@@ -510,7 +571,8 @@ textarea {
 
 /* Début du quizz */
 
-#quizz h3, #quizz p {
+#quizz h3,
+#quizz p {
     margin-bottom: 1em;
 }
 
@@ -518,7 +580,7 @@ textarea {
     height: 7em;
 }
 
-#quizz div:first-of-type > article {
+#quizz div:first-of-type>article {
     padding: 1em;
 }
 
@@ -542,7 +604,7 @@ textarea {
 
 #quizz div {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
@@ -562,17 +624,15 @@ textarea {
 
 /* Début du footer */
 
-.footer > img {
-    width: 1.8em; 
+.footer>img {
+    width: 1.8em;
     padding: 0.2em;
     padding-bottom: 1.5em;
 }
 
-.footer > img:last-of-type {
+.footer>img:last-of-type {
     padding-left: 0.5em;
 }
 
 /* Fin du footer */
-
-
-
+/* Fin Slider */
