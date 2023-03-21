@@ -244,7 +244,7 @@ section .countdown div:not(:first-of-type) {
 }
 
 
-/* Début prog1.html */
+/* Début programmation.html */
 
 #day1 {
     height: 100vh;
@@ -389,5 +389,246 @@ section .countdown div:not(:first-of-type) {
     border-radius: 2rem 0 0 2rem;
 }
 
+/* Fin programmation.html */
+
+/* Début billeterie.html */
+
+header h2 {
+    margin-top: 1.5em;
+}
+
+header h2 #formules {
+    margin-top: 2rem;
+}
+
+#formules h3 {
+    margin-bottom: 2em;
+}
+
+#formules img {
+    width: 2em;
+}
+
+/* Début des flips cards  */
+
+#cards-grid {
+    display: grid;
+    text-align: center;
+    grid-auto-rows: 60vh;
+    gap: 1em;
+}
+
+.card:last-of-type {
+    grid-column: 1/3;
+}
+
+.card {
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card-side {
+    position: absolute;
+    text-align: center;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 3em;
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    /*min-height: 250px;*/
+}
+
+.card-front {
+    backface-visibility: hidden;
+}
+
+.card-back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: var(--backgroundColorAlt);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container>p {
+    padding: 0.5em;
+}
+
+.container>img {
+    margin-top: 0.5em;
+}
+
+.container-back {
+    padding-top: 1em;
+}
+
+.container-back p {
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+}
+
+/* Fin des flip cards  */
+
+.down-arrow-formules,
+.icon-burger {
+    width: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Début de la mise en page générale des formulaires  */
+
+.form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.button {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: #FFFFFF;
+    background-color: var(--backgroundColorAlt);
+    border-radius: 3em;
+    width: 49%;
+    text-align: left;
+    padding: 0.3em;
+    padding-left: 0.5em;
+    font-weight: bold;
+}
+
+/* Fin de la mise en page générale des formulaires */
+
+/* Début du formulaire pour le choix du Pass */
+
+#option-form div>select,
+#option-form input {
+    width: 100%;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 3em;
+    padding: 0.2em;
+    padding-left: 0.5em;
+}
+
+#option-form div:first-of-type {
+    grid-column: 1/3;
+}
+
+#option-form div:last-of-type {
+    grid-column: 1/3;
+}
+
+#option-form h3 {
+    margin-bottom: 1.5em;
+}
+
+/* Fin du formulaire pour le choix du Pass */
+
+/* Début du formulaire de contact  */
+
+.form h3 {
+    margin-bottom: 1.5em;
+}
+
+#contact-form input {
+    width: 100%;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 3em;
+    padding: 0.2em;
+    padding-left: 0.5em;
+}
+
+#contact-form div:nth-of-type(3),
+#contact-form div:last-of-type {
+    grid-column: 1/3;
+}
+
+textarea {
+    width: 100%;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 2em;
+    padding: 0.2em;
+    padding-left: 1em;
+    height: 10em;
+}
+
+/* Fin du formulaire de contact */
+
+/* Début du quizz */
+
+#quizz h3,
+#quizz p {
+    margin-bottom: 1em;
+}
+
+#quizz div:first-of-type {
+    height: 7em;
+}
+
+#quizz div:first-of-type>article {
+    padding: 1em;
+}
+
+#quizz div:last-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#quizz button {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+#quizz p {
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 3em;
+    margin-top: 0;
+}
+
+#quizz div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+#quizz article {
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 3em;
+    text-align: center;
+}
+
+/* Fin du quizz */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Début du footer */
+
+.footer>img {
+    width: 1.8em;
+    padding: 0.2em;
+    padding-bottom: 1.5em;
+}
+
+.footer>img:last-of-type {
+    padding-left: 0.5em;
+}
+
+/* Fin du footer */
 /* Fin Slider */
-/* Fin prog1.html */
