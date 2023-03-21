@@ -214,40 +214,6 @@ section .countdown div:not(:first-of-type) {
 /* Fin Section 2 */
 /* Fin index.html */
 
-@media screen and (min-width: 1024px) {
-    .homePage>h1 {
-        font-size: 3rem;
-    }
-
-    section .countdown {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0;
-        font-size: 4rem;
-    }
-
-    .homePage>h3 {
-        font-size: 1.5rem;
-        font-weight: normal;
-        text-align: end;
-    }
-
-    .artistSummary {
-        line-height: 1.2;
-        font-size: 2rem;
-        margin-top: 4vh;
-    }
-
-    .eventSummary {
-        font-weight: normal;
-        line-height: normal;
-        font-size: 1rem;
-        margin-top: 44vh;
-    }
-}
-
-
 /* Début programmation.html */
 
 #day1 {
@@ -393,6 +359,7 @@ section .countdown div:not(:first-of-type) {
     border-radius: 2rem 0 0 2rem;
 }
 
+/* Fin Slider */
 /* Fin programmation.html */
 
 /* Début billeterie.html */
@@ -532,7 +499,7 @@ section .countdown div:not(:first-of-type) {
     border-radius: 0.5rem;
     border-style: hidden;
     padding: 0.3rem;
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
     font-style: italic;
 }
 
@@ -547,14 +514,27 @@ section .countdown div:not(:first-of-type) {
 /* Fin formulaire choix du Pass */
 /* Fin billetterie.html */
 
-/* Début du formulaire de contact  */
+/* Début contact.html */
+
+#contactContainer {
+    height: 100vh;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+}
+
+#contact-form h3 {
+    margin-top: 2vh;
+}
+
+/* Début formulaire de contact  */
 
 #contact-form input {
     width: 100%;
     background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    padding: 0.2em;
-    padding-left: 0.5em;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    font-style: italic;
 }
 
 #contact-form div:nth-of-type(3),
@@ -562,43 +542,50 @@ section .countdown div:not(:first-of-type) {
     grid-column: 1/3;
 }
 
-textarea {
-    width: 100%;
-    background-color: var(--backgroundColorAltLight);
-    border-radius: 2em;
-    padding: 0.2em;
-    padding-left: 1em;
-    height: 10em;
+.textContainer {
+    height: 55vh;
 }
 
-/* Fin du formulaire de contact */
+textarea {
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+/* Fin formulaire de contact */
 
 /* Début du quizz */
 
-#quizz h3,
-#quizz p {
+/* #quiz h3,
+#quiz p {
     margin-bottom: 1em;
 }
 
-#quizz div:first-of-type {
+#quiz div:first-of-type {
     height: 7em;
 }
 
-#quizz div:first-of-type>article {
+#quiz div:first-of-type>article {
     padding: 1em;
 }
 
-#quizz div:last-of-type {
+#quiz div:last-of-type {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#quizz button {
+#quiz button {
     text-align: center;
     margin-top: 2.5em;
 }
 
-#quizz p {
+#quiz p {
     text-align: center;
     font-weight: bold;
     background-color: var(--backgroundColorAltLight);
@@ -606,37 +593,85 @@ textarea {
     margin-top: 0;
 }
 
-#quizz div {
+#quiz div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
-#quizz article {
+#quiz article {
     background-color: var(--backgroundColorAltLight);
     border-radius: 3em;
     text-align: center;
-}
+} */
 
 /* Fin du quizz */
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+/* Début Social Network */
+
+.socialNetwork {
+    position: absolute;
+    right: 1vh;
+    bottom: 1rem;
+    margin-right: 1rem;
 }
 
-/* Début du footer */
-
-.footer>img {
-    width: 1.8em;
-    padding: 0.2em;
-    padding-bottom: 1.5em;
+.socialNetwork>img {
+    display: inline-block;
+    width: 30px;
 }
 
-.footer>img:last-of-type {
-    padding-left: 0.5em;
+.socialNetwork>img:last-of-type {
+    margin-left: 0.3rem;
 }
 
-/* Fin du footer */
-/* Fin Slider */
+/* Fin Social Network */
+/* Fin contact.html */
+
+@media screen and (min-width: 1024px) {
+
+    /* index.html */
+    .homePage>h1 {
+        font-size: 3rem;
+    }
+
+    section .countdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        font-size: 4rem;
+    }
+
+    .homePage>h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-align: end;
+    }
+
+    .artistSummary {
+        line-height: 1.2;
+        font-size: 2rem;
+        margin-top: 4vh;
+    }
+
+    .eventSummary {
+        font-weight: normal;
+        line-height: normal;
+        font-size: 1.1rem;
+        margin-top: 44vh;
+    }
+
+    /* billetterie.html & contact.html */
+    .packContainer {
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formContainer {
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
