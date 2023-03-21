@@ -28,4 +28,14 @@ function flipCard(e) {
 
 // Fin du script billeterie Flip Card
 
+// Début du script formulaire de contact
 
+const message =
+  "Merci d'avoir pris le temps d'écrire ce message. On reviens vers toi ASAP!";
+
+const form = document.getElementById("contact-form")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert(message);
+  });

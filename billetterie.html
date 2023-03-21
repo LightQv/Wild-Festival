@@ -84,18 +84,18 @@
           </div>
           <div>
             <label for="lastname"></label>
-            <input type="text" name="lastname" id="lastname" placeholder="Nom">
+            <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern = "[A-Za-z]" maxlength="20">
           </div>
           <div>
             <label for="firstname"> </label>
-            <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern = "[A-Za-z]" maxlength="20">
           </div>
           <div>
             <label for="email"> </label>
-            <input type="email" name="email" id="email" placeholder="Mail">
+            <input type="email" name="email" id="email" placeholder="Mail" required>
           </div>
+          <button class="button" type="button"> Envoyer </button>
         </form>
-        <button class="button" type="button"> Envoyer </button>
       </section>
     </main>
     <script src="js/script.js"></script>
