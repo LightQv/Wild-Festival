@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Projet 1</title>
+    <title>WildFest Contact</title>
   </head>
   <body>
+    <nav>
+      <div class="navIcon">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="mobileNav">
+        <ul>
+        <li>
+          <a href="index.html">Accueil</a>
+          <h4>Décompte!</h4>
+        </li>
+        <li>
+          <a href="programmation.html">Program'</a>
+          <h4>Les artistes.</h4>
+        </li>
+        <li>
+          <a href="billetterie.html">Billetterie</a>
+          <h4>Réserve ta place!</h4>
+        </li>
+        <li>
+          <a href="contact.html">Perdus ?</a>
+          <h4>Contact & Quizz</h4>
+        </li> </ul>
+      </div>
+    </nav>
     <header>
-      <!-- <img class="icon-burger" src="assets\icon-burger-yellow.png" alt="icon-menu"> -->
       <h2> Perdu? </h2>
       <h1> Contact </h1>
     </header>
@@ -18,7 +43,6 @@
       <section class="form">
         <h3> Envoie nous un message </h3>
         <form id="contact-form">
-        <!-- </div> -->
           <div>
             <label for="lastname"></label>
             <input type="text" name="lastname" id="lastname" placeholder="Nom" maxlength="20" required>
@@ -60,6 +84,6 @@
       <img src="assets/icon-instagram.png" alt="instagram icon">
       <img src="assets/icon-twitter.png" alt="twitter icon">
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

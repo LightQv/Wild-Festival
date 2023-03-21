@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +7,336 @@
 }
 
 :root {
-    box-sizing: border-box;
     --backgroundColor: rgb(254, 254, 254);
     --backgroundColorAlt: rgb(222, 200, 0);
     --backgroundColorAltLight: rgb(249, 244, 202);
+    --backgroundColorAltTransparent: rgba(222, 200, 0, 0.9);
     --mainTitleColor: rgb(222, 200, 0);
     --mainTitleColorAlt: rgb(254, 254, 254);
     --mainColor: rgb(222, 200, 0);
     --textColor: rgb(1, 1, 1);
     --textColorAlt: rgb(254, 254, 254);
-    --fontFamily: Helvetica;
 }
-    
+
 body {
+    margin: 0;
     line-height: 1.5;
-    font-family: var(--fontFamily);
-    margin-left: 2em;
-    margin-right: 2em;
+    font-family: Helvetica;
+}
+
+.indexBody {
+    background-image: url("/Assets/home-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Debut Menu-Burger */
+
+nav>.navIcon {
+    position: absolute;
+    right: 1vh;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--backgroundColorAlt);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active .bar {
+    background-color: var(--backgroundColor);
+}
+
+.hamburger.is-active:after {
+    background-color: var(--backgroundColor);
+}
+
+nav>.mobileNav {
+    margin-top: 18vh;
+    margin-left: 15vw;
+    position: fixed;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileNav li {
+    color: var(--mainTitleColorAlt);
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+.mobileNav li a {
+    color: var(--mainTitleColorAlt);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.mobileNav li h4 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+nav.is-active {
+    background-color: var(--backgroundColorAltTransparent);
+    height: 100vh;
+}
+
+nav>.mobileNav.is-active {
+    left: 0;
+    transition: 0.4s;
+}
+
+.pageContainer.is-inactive {
+    display: none;
+}
+
+/* Fin Menu-Burger */
+
+/* Début index.html */
+/* Début section 1 */
+
+.welcomePage {
+    color: var(--mainTitleColor);
+    line-height: normal;
+    height: 100vh;
+}
+
+.homePage {
+    padding: 30vh 15vw 0 15vw;
+}
+
+.homePage>h1 {
+    font-size: 2.5rem;
+}
+
+.homePage>h2 {
+    font-size: 2.5rem;
+}
+
+.homePage>h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 1rem;
+    width: 35px;
+}
+
+.down-arrow.is-inactive {
+    display: none;
+}
+
+/* Début Countdown */
+
+section .countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 1.5rem;
+}
+
+section .countdown div:not(:first-of-type) {
+    margin-left: 0.5vw;
+}
+
+/* Fin Countdown */
+/* Fin Section 1 */
+
+/* Début Section 2 */
+
+.descriptionPage {
+    color: var(--mainTitleColor);
+    line-height: normal;
+    height: 100vh;
+}
+
+.scrollHomePage {
+    padding: 13vh 15vw 0 15vw;
+}
+
+.scrollHomeTitle>h1 {
+    font-size: 2.5rem;
+}
+
+.scrollHomeTitle>h2 {
+    font-size: 2.5rem;
+    line-height: normal;
+}
+
+.scrollHomeContent {
+    margin-top: 1.5vh;
+}
+
+.artistSummary {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.eventSummary {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 25vh;
+}
+
+/* Fin Section 2 */
+/* Fin index.html */
+
+
+/*page Prog*/
+
+.dayTitle {
+    padding: 1rem;
+}
+
+#day1 {
+    height: 100vh;
+}
+#day2 {
+    height: 100vh;
+}
+
+/*slider*/
+
+.slider-wrapper {
+    width: 100%;
+    margin: 0.1rem;
+    position: relative;
+    overflow-x: scroll;
+    scroll-snap-align: start;
+}
+.slides-container {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+#slide1 {
+    background-image: url("/Assets/Pictures/rockband1.jpeg");
+}
+#slide2 {
+    background-image: url("/Assets/Pictures/rockband2.webp");
+}
+#slide3 {
+    background-image: url("/Assets/Pictures/rockband3.jpg");
+}
+#slide4 {
+    background-image: url("/Assets/Pictures/rockband4.1.jpg");
+}
+#slide5 {
+    background-image: url("/Assets/Pictures/machines.jpg");
+}
+#slide6 {
+    background-image: url("/Assets/Pictures/techno4.jpg");
+}
+#slide7 {
+    background-image: url("/Assets/Pictures/djscript.jpg");
+}
+#slide8 {
+    background-image: url("/Assets/Pictures/techno3.jpg");
+}
+  
+.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--mainTitleColor);
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slide2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--mainTitleColor);
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    
+}
+
+.slideText {
+    padding: 1rem;
+}
+
+.slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+}
+.slide-arrow:hover,
+.slide-arrow:focus {
+    opacity: 1;
+}
+#slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+#slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+}
+#slide-arrow-prev2 {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+}
+#slide-arrow-next2 {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
 }
 
 /* Début de la page billeterie */
@@ -114,7 +428,7 @@ header h2
 
 /* Fin des flip cards  */
 
-.down-arrow, .icon-burger {
+.down-arrow-formules, .icon-burger {
     width: 4em;
     margin-top: 2em;
     margin-bottom: 2em; }
@@ -259,4 +573,6 @@ textarea {
 }
 
 /* Fin du footer */
+
+
 
