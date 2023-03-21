@@ -116,6 +116,10 @@ nav>.mobileNav.is-active {
     display: none;
 }
 
+.footer.is-inactive {
+    display: none;
+}
+
 /* Fin Menu-Burger */
 
 /* Début index.html */
