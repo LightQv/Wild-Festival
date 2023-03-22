@@ -48,10 +48,10 @@ function flipCard(e) {
 
 // Début du script du formulaire 
 
-const firstNameValue = document.getElementById('firstname').value
-const lastNameValue = document.getElementById('lastname').value
-const mailValue = document.getElementById('email').value
-const selectOptionValue = document.getElementById('option-select').selectedOptions[0].text
+const firstName = document.getElementById('firstname')
+const lastName = document.getElementById('lastname')
+const mail = document.getElementById('email')
+const selectOption = document.getElementById('option-select')
 
 // const optionField = document.querySelector('#option-field')
 // const firstnameField = document.querySelector('#firstname-field')
@@ -60,35 +60,31 @@ const selectOptionValue = document.getElementById('option-select').selectedOptio
 
 const ticketSlide = document.getElementById('ticket');
 const optionForm = document.getElementById("option-form")
-   
+
 optionForm.addEventListener("submit", function (event) {
-//     //window.open('ticket.html', '_blank');
-event.preventDefault();
+    event.preventDefault();
+    
+    if (selectOption.value == "") {
+        alert("Oups! Tu n'as pas choisi ta formule!")
+    }
+    
+    else {
+        document.getElementById("firstname-field").innerText = `Prénom : ${firstName.value}`;
+        document.getElementById("lastname-field").innerText = `Nom : ${lastName.value}`;
+        document.getElementById("email-field").innerText = `Mail : ${mail.value}`;
+        document.getElementById("option-field").innerText = selectOption.value;
+        ticketSlide.classList.toggle('is-active');
+    }
+})
 
-ticketSlide.classList.toggle('is-active');
+//  Début du script ticket
+/*
+const returnButton = document.getElementById('icon-left-arrow')
 
-if(selectOptionValue == "Sélectionne ta formule" ) {
-    alert("Oups! Tu n'as pas choisi ta formule!")
-}
-else {
-document.getElementById("firstname-field").innerHTML = firstNameValue;
-document.getElementById("lastname-field").innerHTML = lastNameValue;
-document.getElementById("email-field").innerHTML = mailValue;
-document.getElementById("option-field").innerHTML = selectOptionValue; }
- })
-    // if (selectOption == "Sélectionne ta formule") {
-    //     alert("Ooops! Tu n'as pas choisi ta formule!")    
-    // }
-
-    // else {
-    // optionField.appendChild(selectOption);
-    // firstnameField.appendChild(firstName);
-    // lastnameField.appendChild(lastName);
-    // emailField.appendChild(mail);
-// });
+returnButton.addEventListener("click", function () {
+    window.open('billetterie.html', '_blank');
+})
 
 
-
-
-
+*/
 

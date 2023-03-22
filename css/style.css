@@ -566,7 +566,6 @@ header h2 #formules {
 
 #ticket {
 margin-top: 18vh;
-margin-left: 15vw;
 height: 100vh;
 width: 100vw;
 position: fixed;
@@ -581,7 +580,19 @@ background-color: var(--backgroundColor);
     transition: 0.4s;
 }
 
+#ticket h2 {
+    text-align: center;
+    padding-top: 1em;
+}
 
+#icon-left-arrow {
+    width: 3em;
+    margin-top: 1em;
+}
+
+#div-left-arrow {
+    text-align: center;
+}
 
 /* Fin du formulaire pour le choix du Pass */
 
