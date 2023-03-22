@@ -216,17 +216,16 @@ section .countdown div:not(:first-of-type) {
 
 /* Début programmation.html */
 
+
 #programmationContainer {
     height: 100vh;
 }
 
-#day1 {
+.dayProg {
     height: 100vh;
+    padding-top: 6vh;
 }
 
-#day2 {
-    height: 100vh;
-}
 
 #progTitle {
     padding: 1.4rem 2rem 1.4rem 2rem;
@@ -237,6 +236,7 @@ section .countdown div:not(:first-of-type) {
 .slider-wrapper {
     width: 100%;
     display: flex;
+    margin: 0rem;
     position: relative;
     overflow-x: scroll;
     scroll-snap-align: start;
@@ -255,9 +255,9 @@ section .countdown div:not(:first-of-type) {
 }
 
 .infoButton {
-    background-color: var(--backgroundColorAlt);
+    margin: 0.2rem;
     color: var(--textColor);
-    margin-top: 0.2rem;
+    background-color: var(--backgroundColorAlt);
     padding: 0.3rem;
     border-radius: 0.5rem;
     border-style: hidden;
@@ -659,6 +659,16 @@ textarea {
 .socialNetwork>img:last-of-type {
     margin-left: 0.3rem;
 }
+#footerProg{
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+/* Fin Social Network */
+/* Fin contact.html */
+
+@media screen and (min-width: 1024px) {
+
 
 /* Fin Social Network */
 /* Fin contact.html */
