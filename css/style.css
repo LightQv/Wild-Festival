@@ -671,16 +671,6 @@ textarea {
 .socialNetwork img:last-of-type {
     margin-left: 0.3rem;
 }
-#footerProg{
-    position: relative;
-    display: flex;
-    justify-content: end;
-}
-/* Fin Social Network */
-/* Fin contact.html */
-
-@media screen and (min-width: 1024px) {
-
 
 .footerProg {
     display: none;
@@ -698,9 +688,6 @@ textarea {
 .footerProg.is-active {
     display: initial;
 }
-
-
-
 
 /* Fin Social Network */
 /* Fin contact.html */
