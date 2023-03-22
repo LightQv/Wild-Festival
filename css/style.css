@@ -216,6 +216,10 @@ section .countdown div:not(:first-of-type) {
 
 /* Début programmation.html */
 
+#programmationContainer {
+    height: 100vh;
+}
+
 #day1 {
     height: 100vh;
 }
@@ -224,15 +228,14 @@ section .countdown div:not(:first-of-type) {
     height: 100vh;
 }
 
-.dayTitle {
-    padding: 3vh 5vw 1vh 5vw;
+#progTitle {
+    padding: 1.4rem 2rem 1.4rem 2rem;
 }
 
 /* Début Slider */
 
 .slider-wrapper {
     width: 100%;
-    margin: 0rem;
     display: flex;
     position: relative;
     overflow-x: scroll;
@@ -252,10 +255,12 @@ section .countdown div:not(:first-of-type) {
 }
 
 .infoButton {
-    color: var(--textColor);
     background-color: var(--backgroundColorAlt);
-    padding: 0.2rem;
-    border-radius: 3em;
+    color: var(--textColor);
+    margin-top: 0.2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border-style: hidden;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -293,17 +298,18 @@ section .countdown div:not(:first-of-type) {
     background-image: url("/Assets/Pictures/techno3.jpg");
 }
 
-.slideInfo{
+.slideInfo {
     display: none;
     font-weight: bold;
     color: var(--mainTitleColor);
 }
-.slideInfo.is-active{
-    display:flex;
+
+.slideInfo.is-active {
+    display: flex;
     backdrop-filter: blur(3px);
 }
 
-.slide.is-inactive{
+.slide.is-inactive {
     filter: brightness(90%);
 }
 
@@ -331,7 +337,8 @@ section .countdown div:not(:first-of-type) {
 }
 
 .slideText {
-    padding: 3vh 5vw 1vh 5vw;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    font-size: 0.8rem;
 }
 
 .slideText>p {
@@ -345,13 +352,14 @@ section .countdown div:not(:first-of-type) {
     bottom: 0;
     margin: auto;
     height: 4rem;
-    background-color: white;
+    background-color: transparent;
+    color: var(--mainTitleColor);
     border: none;
     width: 2rem;
     font-size: 3rem;
     padding: 0;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 100ms;
 }
 
@@ -362,25 +370,25 @@ section .countdown div:not(:first-of-type) {
 
 #slide-arrow-prev {
     left: 0;
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
     border-radius: 0 2rem 2rem 0;
 }
 
 #slide-arrow-next {
     right: 0;
-    padding-left: 0.75rem;
+    padding-right: 0.5rem;
     border-radius: 2rem 0 0 2rem;
 }
 
 #slide-arrow-prev2 {
     left: 0;
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
     border-radius: 0 2rem 2rem 0;
 }
 
 #slide-arrow-next2 {
     right: 0;
-    padding-left: 0.75rem;
+    padding-right: 0.5rem;
     border-radius: 2rem 0 0 2rem;
 }
 
@@ -454,6 +462,7 @@ section .countdown div:not(:first-of-type) {
     height: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    cursor: pointer;
 }
 
 .container>h4 {
@@ -503,14 +512,15 @@ section .countdown div:not(:first-of-type) {
 
 .button {
     margin-top: 0.2rem;
-    color: #FFFFFF;
     background-color: var(--backgroundColorAlt);
+    color: var(--textColorAlt);
     border-radius: 0.5rem;
     border-style: hidden;
     width: 49%;
     text-align: center;
     padding: 0.3em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Fin formulaires */

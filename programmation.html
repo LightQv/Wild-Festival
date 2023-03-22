@@ -41,14 +41,15 @@
     </div>
   </nav>
   <main>
-    <div class="pageContainer">
+    <div class="pageContainer" id="programmationContainer">
       <section id="day1">
-        <h1 class="dayTitle">Nuit #1 - Rock</h1>
+        <section class="pageTitle" id="progTitle">
+          <h2>Nuit #1</h2>
+          <h1>Rock 'n' Roll</h1>
+        </section>
         <section class="slider-wrapper">
           <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-
           <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
-
           <ul class="slides-container" id="slides-container">
             <li class="slide" id="slide1">
               <div class="slideText">
@@ -137,7 +138,10 @@
       </section>
 
       <section id="day2">
-        <h1 class="dayTitle">Nuit #2 - Electro</h1>
+        <section class="pageTitle" id="progTitle">
+          <h2>Nuit #2</h2>
+          <h1>Electro</h1>
+        </section>
         <section class="slider-wrapper">
           <button class="slide-arrow" id="slide-arrow-prev2">&#8249;</button>
 
@@ -228,9 +232,15 @@
           </ul>
         </section>
       </section>
+      <footer class="socialNetwork">
+        <img src="Assets/Icons/icon-facebook.png" alt="facebook-icon">
+        <img src="Assets/Icons/icon-twitter.png" alt="twitter-icon">
+        <img src="Assets/Icons/icon-instagram.png" alt="instagram-icon">
+      </footer>
     </div>
   </main>
   <script src="js/programmation.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
