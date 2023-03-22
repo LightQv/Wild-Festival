@@ -223,9 +223,7 @@ section .countdown div:not(:first-of-type) {
 
 .dayProg {
     height: 100vh;
-    padding-top: 6vh;
 }
-
 
 #progTitle {
     padding: 1.4rem 2rem 1.4rem 2rem;
@@ -254,8 +252,11 @@ section .countdown div:not(:first-of-type) {
     scroll-snap-type: x mandatory;
 }
 
+
+
 .infoButton {
     margin: 0.2rem;
+    margin-left: 0;
     color: var(--textColor);
     background-color: var(--backgroundColorAlt);
     padding: 0.3rem;
@@ -607,53 +608,6 @@ textarea {
 
 /* Fin formulaire de contact */
 
-/* Début du quizz */
-
-/* #quiz h3,
-#quiz p {
-    margin-bottom: 1em;
-}
-
-#quiz div:first-of-type {
-    height: 7em;
-}
-
-#quiz div:first-of-type>article {
-    padding: 1em;
-}
-
-#quiz div:last-of-type {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-#quiz button {
-    text-align: center;
-    margin-top: 2.5em;
-}
-
-#quiz p {
-    text-align: center;
-    font-weight: bold;
-    background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    margin-top: 0;
-}
-
-#quiz div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-}
-
-#quiz article {
-    background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    text-align: center;
-} */
-
-/* Fin du quizz */
-
 /* Début Social Network */
 
 .socialNetwork {
@@ -732,10 +686,6 @@ textarea {
     /* programmation.html */
     .progBody {
         background: linear-gradient(0.135turn, var(--backgroundColor), var(--backgroundColorAltLight));
-    }
-
-    .slides-container {
-        overflow: hidden;
     }
 
     /* billetterie.html & contact.html */
