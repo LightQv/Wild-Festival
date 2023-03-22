@@ -23,27 +23,29 @@
         </button>
       </div>
       <div class="mobileNav">
-        <li>
-          <a href="index.html">Accueil</a>
-          <h4>Décompte!</h4>
-        </li>
-        <li>
-          <a href="programmation.html">Program'</a>
-          <h4>Les artistes.</h4>
-        </li>
-        <li>
-          <a href="billetterie.html">Billetterie</a>
-          <h4>Réserve ta place!</h4>
-        </li>
-        <li>
-          <a href="contact.html">Perdus ?</a>
-          <h4>Contact & Quizz</h4>
-        </li>
+        <ul>
+          <li>
+            <a href="index.html">Accueil</a>
+            <h4>Décompte!</h4>
+          </li>
+          <li>
+            <a href="programmation.html">Program'</a>
+            <h4>Les artistes.</h4>
+          </li>
+          <li>
+            <a href="billetterie.html">Billetterie</a>
+            <h4>Réserve ta place!</h4>
+          </li>
+          <li>
+            <a href="contact.html">Perdus ?</a>
+            <h4>Contact</h4>
+          </li>
+        </ul>
       </div>
     </nav>
     <main>
       <div class="pageContainer">
-        <section id="day1">
+        <section id="day1" class="dayProg">
           <h1 class="dayTitle">Nuit #1 - Rock</h1>
           <section class="slider-wrapper">
             <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
@@ -121,7 +123,7 @@
                   <div class="slideInfo">
                     <p>
                       The Rolling Pierre est un groupe de rock légendaire formé
-                      en 1962, dont la basse est tenue par le talentueux Pierre
+                      en 1998, dont la basse est tenue par le talentueux Pierre
                       Paillard. Connus pour leur énergie sur scène et leur son
                       unique, le groupe a marqué l'histoire de la musique avec
                       des tubes inoubliables tels que "(I Can't Get No)
@@ -137,7 +139,7 @@
           </section>
         </section>
 
-        <section id="day2">
+        <section id="day2" class="dayProg">
           <h1 class="dayTitle">Nuit #2 - Electro</h1>
           <section class="slider-wrapper">
             <button class="slide-arrow" id="slide-arrow-prev2">&#8249;</button>
@@ -229,8 +231,14 @@
             </ul>
           </section>
         </section>
+        <footer class="socialNetwork" id="footerProg">
+          <img src="Assets/Icons/icon-facebook.png" alt="facebook-icon" />
+          <img src="Assets/Icons/icon-twitter.png" alt="twitter-icon" />
+          <img src="Assets/Icons/icon-instagram.png" alt="instagram-icon" />
+        </footer>
       </div>
     </main>
+
     <script src="js/programmation.js"></script>
   </body>
 </html>
