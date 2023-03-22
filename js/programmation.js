@@ -1,3 +1,16 @@
+/* Script InfoButton */
+
+const infoButtons = document.querySelectorAll(".infoButton");
+const slideInfos = document.querySelectorAll(".slideInfo");
+const slides = document.querySelectorAll(".slide");
+
+infoButtons.forEach((infoButton, index) => {
+  infoButton.addEventListener("click", function () {
+    slideInfos[index].classList.toggle("is-active");
+    slides[index].classList.toggle("is-inactive");
+  });
+});
+
 /* Début du Script Slider */
 
 const slidesContainer = document.getElementById("slides-container");
