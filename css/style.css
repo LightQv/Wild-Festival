@@ -267,6 +267,7 @@ section .countdown div:not(:first-of-type) {
 .slider-wrapper {
     width: 100%;
     margin: 0rem;
+    display: flex;
     position: relative;
     overflow-x: scroll;
     scroll-snap-align: start;
@@ -282,6 +283,16 @@ section .countdown div:not(:first-of-type) {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+}
+
+.infoButton {
+    color: var(--textColor);
+    background-color: var(--backgroundColorAlt);
+    padding: 0.2rem;
+    border-radius: 3em;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 #slide1 {
@@ -316,6 +327,20 @@ section .countdown div:not(:first-of-type) {
     background-image: url("/Assets/Pictures/techno3.jpg");
 }
 
+.slideInfo{
+    display: none;
+    font-weight: bold;
+    color: var(--mainTitleColor);
+}
+.slideInfo.is-active{
+    display:flex;
+    backdrop-filter: blur(3px);
+}
+
+.slide.is-inactive{
+    filter: brightness(90%);
+}
+
 .slide {
     background-size: cover;
     background-repeat: no-repeat;
@@ -344,7 +369,7 @@ section .countdown div:not(:first-of-type) {
 }
 
 .slideText>p {
-    line-height: 0.5;
+    line-height: 1.5;
 }
 
 .slide-arrow {
