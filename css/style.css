@@ -537,6 +537,27 @@ header h2 #formules {
     margin-bottom: 1.5em;
 }
 
+/* Début de la page "ticket" */
+
+#ticket {
+margin-top: 18vh;
+margin-left: 15vw;
+height: 100vh;
+width: 100vw;
+position: fixed;
+bottom: 100%;
+display: flex;
+flex-direction: column;
+background-color: var(--backgroundColor);
+}
+
+#ticket.is-active {
+    bottom: 0;
+    transition: 0.4s;
+}
+
+
+
 /* Fin du formulaire pour le choix du Pass */
 
 /* Début du formulaire de contact  */

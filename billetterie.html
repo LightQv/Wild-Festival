@@ -100,11 +100,11 @@
       </section>
       <img class="down-arrow-formules" src="Assets/Icons/icon-down-arrow.png" alt="down arrow">
 
-      <section class="form" id="option-form">
+      <section class="form">
         <h3> C'est parti! </h3>
-        <form>
+        <form id="option-form">
           <div>
-            <select name="choix de la formule" id="choix_de_la_formule">
+            <select name="choix de la formule" id="option-select">
               <option value="default value"> Sélectionne ta formule </option>
               <option value="Une nuit"> Pass "Une nuit" </option>
               <option value="Deux nuits"> Pass "Deux nuits" </option>
@@ -113,24 +113,39 @@
           </div>
           <div>
             <label for="lastname"></label>
-            <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern="[A-Za-z]"
-              maxlength="20">
+            <input type="text" name="lastname" id="lastname" placeholder="Nom"
+              maxlength="20" required>
           </div>
           <div>
             <label for="firstname"> </label>
-            <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern="[A-Za-z]"
-              maxlength="20">
+            <input type="text" name="firstname" id="firstname" placeholder="Prénom"
+              maxlength="20" required>
           </div>
           <div>
             <label for="email"> </label>
             <input type="email" name="email" id="email" placeholder="Mail" required>
           </div>
-          <button class="button" type="button"> Envoyer </button>
+          <button id="button-option-form" class="button" type="submit"> Envoyer </button>
         </form>
       </section>
     </div>
+    <div id="ticket">
+      <h3> Voici ton billet </h3>
+      <img src="Assets/Icons/QR_code.png" alt="QR Code">
+      <!--/*fonctionnalité à implémenter : définir les champs suivant en fonction de ce que l'utilisateur a rentré en input. -->
+      <h3 id="option-field"> Formule choisie </h3>
+      <h3 id="lastname-field"> Nom </h3> 
+      <h3 id="firstname-field"> Prénom </h3>
+      <h3 id="email-field"> Mail </h3>
+      <footer class="footer">
+      <img src="Assets/Icons/icon-facebook.png" alt="facebook icon">
+      <img src="Assets/Icons/icon-instagram.png" alt="instagram icon">
+      <img src="Assets/Icons/icon-twitter.png" alt="twitter icon">
+      </footer>
+    </div>
   </main>
   <script src="js/billetterie.js"></script>
+  <script src="js/ticket.js"></script>
 </body>
 
 </html>

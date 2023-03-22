@@ -15,3 +15,20 @@ menuBurger.addEventListener('click', function () {
 });
 
 /* Fin du Script Menu-burger */
+
+// Début du Script pour générer le ticket
+
+const firstName = document.querySelector('#firstname')
+const lastName = document.querySelector('#lastname')
+const mail = document.querySelector('#email')
+const selectOption = document.querySelector('#choix_de_la_formule').selectedOptions[0].text
+
+const optionField = document.querySelector('#option-field')
+const firstnameField = document.querySelector('#firstname-field')
+const lastnameField = document.querySelector('#lastname-field')
+const emailField = document.querySelector('#email-field')
+
+optionField.appendChild(selectOption)
+firstnameField.appendChild(firstName)
+lastnameField.appendChild(lastName)
+emailField.appendChild(mail)

@@ -45,3 +45,50 @@ function flipCard(e) {
 }
 
 // Fin du script billeterie Flip Card
+
+// Début du script du formulaire 
+
+const firstNameValue = document.getElementById('firstname').value
+const lastNameValue = document.getElementById('lastname').value
+const mailValue = document.getElementById('email').value
+const selectOptionValue = document.getElementById('option-select').selectedOptions[0].text
+
+// const optionField = document.querySelector('#option-field')
+// const firstnameField = document.querySelector('#firstname-field')
+// const lastnameField = document.querySelector('#lastname-field')
+// const emailField = document.querySelector('#email-field')
+
+const ticketSlide = document.getElementById('ticket');
+const optionForm = document.getElementById("option-form")
+   
+optionForm.addEventListener("submit", function (event) {
+//     //window.open('ticket.html', '_blank');
+event.preventDefault();
+
+ticketSlide.classList.toggle('is-active');
+
+if(selectOptionValue == "Sélectionne ta formule" ) {
+    alert("Oups! Tu n'as pas choisi ta formule!")
+}
+else {
+document.getElementById("firstname-field").innerHTML = firstNameValue;
+document.getElementById("lastname-field").innerHTML = lastNameValue;
+document.getElementById("email-field").innerHTML = mailValue;
+document.getElementById("option-field").innerHTML = selectOptionValue; }
+ })
+    // if (selectOption == "Sélectionne ta formule") {
+    //     alert("Ooops! Tu n'as pas choisi ta formule!")    
+    // }
+
+    // else {
+    // optionField.appendChild(selectOption);
+    // firstnameField.appendChild(firstName);
+    // lastnameField.appendChild(lastName);
+    // emailField.appendChild(mail);
+// });
+
+
+
+
+
+
