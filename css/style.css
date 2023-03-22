@@ -737,15 +737,43 @@ textarea {
         background: linear-gradient(0.135turn, var(--backgroundColor), var(--backgroundColorAltLight));
     }
 
+    .slider-wrapper {
+        height: 87.2%;
+        padding-bottom: 1.4rem;
+    }
+
+    .slides-container {
+        height: 100%;
+    }
+
     .slideInfo.is-active {
-        max-height: 50vh;
+        height: auto;
         background-color: var(--backgroundColorAltLightTransparent);
         color: var(--textColor);
-        margin-top: 1rem;
+        margin-top: 10vh;
         margin-left: 15vw;
         margin-right: 15vw;
         padding: 4.2rem;
         font-size: 1.3rem;
+        text-align: center;
+    }
+
+    #slide-arrow-prev {
+        padding-left: 1.5rem;
+    }
+
+    #slide-arrow-next {
+        padding-right: 1.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #slide-arrow-prev2 {
+        padding-left: 1.5rem;
+    }
+
+    #slide-arrow-next2 {
+        padding-right: 1.5rem;
+        margin-right: 0.5rem;
     }
 
     .infoText {
