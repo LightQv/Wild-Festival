@@ -1,3 +1,4 @@
+
 /* Début du Script Menu-burger */
 
 const menuBurger = document.querySelector('.hamburger');
@@ -32,3 +33,4 @@ optionField.appendChild(selectOption)
 firstnameField.appendChild(firstName)
 lastnameField.appendChild(lastName)
 emailField.appendChild(mail)
+

@@ -214,60 +214,29 @@ section .countdown div:not(:first-of-type) {
 /* Fin Section 2 */
 /* Fin index.html */
 
-@media screen and (min-width: 1024px) {
-    .homePage>h1 {
-        font-size: 3rem;
-    }
-
-    section .countdown {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0;
-        font-size: 4rem;
-    }
-
-    .homePage>h3 {
-        font-size: 1.5rem;
-        font-weight: normal;
-        text-align: end;
-    }
-
-    .artistSummary {
-        line-height: 1.2;
-        font-size: 2rem;
-        margin-top: 4vh;
-    }
-
-    .eventSummary {
-        font-weight: normal;
-        line-height: normal;
-        font-size: 1rem;
-        margin-top: 44vh;
-    }
-}
-
-
 /* Début programmation.html */
 
-#day1 {
+
+#programmationContainer {
     height: 100vh;
 }
 
-#day2 {
+.dayProg {
     height: 100vh;
+    padding-top: 6vh;
 }
 
-.dayTitle {
-    padding: 3vh 5vw 1vh 5vw;
+
+#progTitle {
+    padding: 1.4rem 2rem 1.4rem 2rem;
 }
 
 /* Début Slider */
 
 .slider-wrapper {
     width: 100%;
-    margin: 0rem;
     display: flex;
+    margin: 0rem;
     position: relative;
     overflow-x: scroll;
     scroll-snap-align: start;
@@ -286,10 +255,12 @@ section .countdown div:not(:first-of-type) {
 }
 
 .infoButton {
+    margin: 0.2rem;
     color: var(--textColor);
     background-color: var(--backgroundColorAlt);
-    padding: 0.2rem;
-    border-radius: 3em;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border-style: hidden;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
@@ -327,17 +298,18 @@ section .countdown div:not(:first-of-type) {
     background-image: url("/Assets/Pictures/techno3.jpg");
 }
 
-.slideInfo{
+.slideInfo {
     display: none;
     font-weight: bold;
     color: var(--mainTitleColor);
 }
-.slideInfo.is-active{
-    display:flex;
+
+.slideInfo.is-active {
+    display: flex;
     backdrop-filter: blur(3px);
 }
 
-.slide.is-inactive{
+.slide.is-inactive {
     filter: brightness(90%);
 }
 
@@ -365,7 +337,8 @@ section .countdown div:not(:first-of-type) {
 }
 
 .slideText {
-    padding: 3vh 5vw 1vh 5vw;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    font-size: 0.8rem;
 }
 
 .slideText>p {
@@ -379,13 +352,14 @@ section .countdown div:not(:first-of-type) {
     bottom: 0;
     margin: auto;
     height: 4rem;
-    background-color: white;
+    background-color: transparent;
+    color: var(--mainTitleColor);
     border: none;
     width: 2rem;
     font-size: 3rem;
     padding: 0;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 100ms;
 }
 
@@ -396,55 +370,58 @@ section .countdown div:not(:first-of-type) {
 
 #slide-arrow-prev {
     left: 0;
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
     border-radius: 0 2rem 2rem 0;
 }
 
 #slide-arrow-next {
     right: 0;
-    padding-left: 0.75rem;
+    padding-right: 0.5rem;
     border-radius: 2rem 0 0 2rem;
 }
 
 #slide-arrow-prev2 {
     left: 0;
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
     border-radius: 0 2rem 2rem 0;
 }
 
 #slide-arrow-next2 {
     right: 0;
-    padding-left: 0.75rem;
+    padding-right: 0.5rem;
     border-radius: 2rem 0 0 2rem;
 }
 
+/* Fin Slider */
 /* Fin programmation.html */
 
 /* Début billeterie.html */
 
-header h2 {
-    margin-top: 1.5em;
+#billetterieContainer {
+    height: 100vh;
+    padding: 1.4rem 2rem 1.4rem 2rem;
 }
 
-header h2 #formules {
-    margin-top: 2rem;
+.pageTitle h1 {
+    font-size: 2rem;
+    line-height: 0.8;
 }
 
-#formules h3 {
-    margin-bottom: 2em;
+.packContainer {
+    margin-top: 2vh;
 }
 
-#formules img {
-    width: 2em;
+.packContainer h3 {
+    margin-bottom: 0.5rem;
 }
 
-/* Début des flips cards  */
+/* Début flips cards  */
 
 #cards-grid {
     display: grid;
     text-align: center;
-    grid-auto-rows: 60vh;
-    gap: 1em;
+    grid-auto-rows: 20vh;
+    gap: 0.5rem;
 }
 
 .card:last-of-type {
@@ -461,11 +438,9 @@ header h2 #formules {
     position: absolute;
     text-align: center;
     background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    padding: 2em;
+    border-radius: 0.5rem;
     width: 100%;
     height: 100%;
-    /*min-height: 250px;*/
 }
 
 .card-front {
@@ -476,6 +451,7 @@ header h2 #formules {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     background-color: var(--backgroundColorAlt);
+    color: var(--textColorAlt);
 }
 
 .container {
@@ -484,70 +460,82 @@ header h2 #formules {
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+.container>h4 {
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .container>p {
-    padding: 0.5em;
+    font-size: 0.8rem;
+    line-height: 1;
 }
 
 .container>img {
-    margin-top: 0.5em;
-}
-
-.container-back {
-    padding-top: 1em;
-}
-
-.container-back p {
-    padding: 0.5em;
-    margin-bottom: 0;
+    width: 1.5rem;
+    margin-top: 0.3rem;
 }
 
 .flipCard {
     transform: rotateY(180deg);
 }
 
-/* Fin des flip cards  */
+/* Fin flip cards  */
 
-.down-arrow-formules,
-.icon-burger {
-    width: 4em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+.down-arrow-formules {
+    margin-top: 1rem;
+    margin-left: -1rem;
+    width: 35px;
 }
 
-/* Début de la mise en page générale des formulaires  */
+/* Début formulaires  */
+
+.formContainer {
+    margin-top: 1vh;
+}
+
+.formContainer h3 {
+    margin-bottom: 0.5rem;
+}
 
 .form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 0.3rem;
 }
 
 .button {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    color: #FFFFFF;
+    margin-top: 0.2rem;
     background-color: var(--backgroundColorAlt);
-    border-radius: 3em;
+    color: var(--textColorAlt);
+    border-radius: 0.5rem;
+    border-style: hidden;
     width: 49%;
-    text-align: left;
+    text-align: center;
     padding: 0.3em;
-    padding-left: 0.5em;
     font-weight: bold;
+    cursor: pointer;
 }
 
-/* Fin de la mise en page générale des formulaires */
+/* Fin formulaires */
 
-/* Début du formulaire pour le choix du Pass */
+/* Début formulaire choix du Pass */
 
 #option-form div>select,
 #option-form input {
     width: 100%;
     background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    padding: 0.2em;
-    padding-left: 0.5em;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    font-style: italic;
 }
 
 #option-form div:first-of-type {
@@ -558,9 +546,8 @@ header h2 #formules {
     grid-column: 1/3;
 }
 
-#option-form h3 {
-    margin-bottom: 1.5em;
-}
+/* Fin formulaire choix du Pass */
+/* Fin billetterie.html */
 
 /* Début de la page "ticket" */
 
@@ -596,18 +583,28 @@ background-color: var(--backgroundColor);
 
 /* Fin du formulaire pour le choix du Pass */
 
-/* Début du formulaire de contact  */
+/* Début contact.html */
 
-.form h3 {
-    margin-bottom: 1.5em;
+
+#contactContainer {
+    height: 100vh;
+    padding: 1.4rem 2rem 1.4rem 2rem;
 }
+
+#contact-form h3 {
+    margin-top: 2vh;
+}
+
+/* Début formulaire de contact  */
 
 #contact-form input {
     width: 100%;
     background-color: var(--backgroundColorAltLight);
-    border-radius: 3em;
-    padding: 0.2em;
-    padding-left: 0.5em;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    font-style: italic;
 }
 
 #contact-form div:nth-of-type(3),
@@ -615,43 +612,50 @@ background-color: var(--backgroundColor);
     grid-column: 1/3;
 }
 
-textarea {
-    width: 100%;
-    background-color: var(--backgroundColorAltLight);
-    border-radius: 2em;
-    padding: 0.2em;
-    padding-left: 1em;
-    height: 10em;
+.textContainer {
+    height: 55vh;
 }
 
-/* Fin du formulaire de contact */
+textarea {
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundColorAltLight);
+    border-radius: 0.5rem;
+    border-style: hidden;
+    padding: 0.3rem;
+    padding-top: 0.5rem;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+/* Fin formulaire de contact */
 
 /* Début du quizz */
 
-#quizz h3,
-#quizz p {
+/* #quiz h3,
+#quiz p {
     margin-bottom: 1em;
 }
 
-#quizz div:first-of-type {
+#quiz div:first-of-type {
     height: 7em;
 }
 
-#quizz div:first-of-type>article {
+#quiz div:first-of-type>article {
     padding: 1em;
 }
 
-#quizz div:last-of-type {
+#quiz div:last-of-type {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#quizz button {
+#quiz button {
     text-align: center;
     margin-top: 2.5em;
 }
 
-#quizz p {
+#quiz p {
     text-align: center;
     font-weight: bold;
     background-color: var(--backgroundColorAltLight);
@@ -659,37 +663,90 @@ textarea {
     margin-top: 0;
 }
 
-#quizz div {
+#quiz div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
 
-#quizz article {
+#quiz article {
     background-color: var(--backgroundColorAltLight);
     border-radius: 3em;
     text-align: center;
-}
+} */
 
 /* Fin du quizz */
 
-.footer {
+/* Début Social Network */
+
+.socialNetwork {
+    position: absolute;
+    right: 1vh;
+    bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.socialNetwork>img {
+    display: inline-block;
+    width: 30px;
+}
+
+.socialNetwork>img:last-of-type {
+    margin-left: 0.3rem;
+}
+#footerProg{
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
-/* Début du footer */
+/* Fin Social Network */
+/* Fin contact.html */
 
-.footer>img {
-    width: 1.8em;
-    padding: 0.2em;
-    padding-bottom: 1.5em;
+@media screen and (min-width: 1024px) {
+
+    /* index.html */
+    .homePage>h1 {
+        font-size: 3rem;
+    }
+
+    section .countdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        font-size: 4rem;
+    }
+
+    .homePage>h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-align: end;
+    }
+
+    .artistSummary {
+        line-height: 1.2;
+        font-size: 2rem;
+        margin-top: 4vh;
+    }
+
+    .eventSummary {
+        font-weight: normal;
+        line-height: normal;
+        font-size: 1.1rem;
+        margin-top: 44vh;
+    }
+
+    /* billetterie.html & contact.html */
+    .packContainer {
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .formContainer {
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-.footer>img:last-of-type {
-    padding-left: 0.5em;
-}
-
-/* Fin du footer */
-/* Fin Slider */
