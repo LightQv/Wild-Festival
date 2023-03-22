@@ -98,56 +98,61 @@
       <img class="down-arrow-formules" src="Assets/Icons/icon-down-arrow.png" alt="down arrow">
 
       <section class="formContainer">
-        <div class="form" id="option-form">
+        <div class="form" id="desktopForm">
           <h3>C'est parti!</h3>
-          <form id="desktopForm">
+          <form id="option-form">
             <div>
-              <select name="choix de la formule" id="choix_de_la_formule">
-                <option value="default value">Sélectionne ta formule</option>
-                <option value="Une nuit">Formule "Une nuit"</option>
-                <option value="Deux nuits">Formule "Deux nuits"</option>
-                <option value="La totale">Pass "La totale </option>
+              <select name="choix de la formule" id="option-select">
+                <option value="">Sélectionne ton pass</option>
+                <option value="Pass `Une nuit`">"Une nuit"</option>
+                <option value="Pass `Deux nuits`">"Deux nuits"</option>
+                <option value="Pass `La totale`">"La totale"</option>
               </select>
             </div>
             <div>
               <label for="lastname"></label>
-              <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern="[A-Za-z]"
-                maxlength="20">
+              <input type="text" name="lastname" id="lastname" placeholder="Nom" maxlength="20">
             </div>
             <div>
               <label for="firstname"> </label>
-              <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern="[A-Za-z]"
-                maxlength="20">
+              <input type="text" name="firstname" id="firstname" placeholder="Prénom" maxlength="20">
             </div>
             <div>
               <label for="email"> </label>
               <input type="email" name="email" id="email" placeholder="Mail" required>
             </div>
-            <button class="button" type="button"> Envoyer </button>
+            <button id="button-option-form" class="button" type="submit">Envoyer</button>
           </form>
         </div>
       </section>
     </div>
-    <div id="ticket">
-      <h3> Voici ton billet </h3>
-      <img src="Assets/Icons/QR_code.png" alt="QR Code">
-      <!--/*fonctionnalité à implémenter : définir les champs suivant en fonction de ce que l'utilisateur a rentré en input. -->
-      <h3 id="option-field"> Formule choisie </h3>
-      <h3 id="lastname-field"> Nom </h3> 
-      <h3 id="firstname-field"> Prénom </h3>
-      <h3 id="email-field"> Mail </h3>
-      <h2> Enjoy! </h2>
-      <a href="billetterie.html">
-      <div id="div-left-arrow">
-      <img src="Assets/Icons/icon-left-arrow.png" alt="icon-left-arrow" id="icon-left-arrow">
-      </div>
-    </a>
+    <div class="pageContainer" id="ticket">
+      <section class="pageTitle">
+        <h2>Merci!</h2>
+        <h1>À bientôt!</h1>
+      </section>
+      <section class="ticketContainer">
+        <h3>Voici ton billet :</h3>
+        <img src="Assets/Icons/QR_code.png" alt="QR Code" id="codeQR">
+        <h5 id="option-field">Pass choisi</h5>
+        <h5 id="lastname-field">Nom</h5>
+        <h5 id="firstname-field">Prénom</h5>
+        <h5 id="email-field">Mail</h5>
+        <h2 id="enjoyMessage">Enjoy!</h2>
+        <a href="billetterie.html">
+          <img src="Assets/Icons/icon-left-arrow.png" alt="icon-left-arrow" id="down-arrow-ticket">
+        </a>
+      </section>
     </div>
-      <footer class="footer">
-      <img src="Assets/Icons/icon-facebook.png" alt="facebook icon">
-      <img src="Assets/Icons/icon-instagram.png" alt="instagram icon">
-      <img src="Assets/Icons/icon-twitter.png" alt="twitter icon">
-      </footer>
+    <footer class="socialNetwork">
+      <a href="https://fr-fr.facebook.com/WildCodeSchool/"><img src="Assets/Icons/icon-facebook.png"
+          alt="facebook-icon"></a>
+      <a href="https://twitter.com/WildCodeSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+          src="Assets/Icons/icon-twitter.png" alt="twitter-icon"></a>
+      <a
+        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjjjZnf1-_9AhWGh_0HHd-JCP8QFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fwildcodeschoolofficial%2F%3Fhl%3Dfr&usg=AOvVaw26IG4g8qiGfW1mkxZosRqR"><img
+          src="Assets/Icons/icon-instagram.png" alt="instagram-icon"></a>
+    </footer>
   </main>
   <script src="js/billetterie.js"></script>
   <script src="js/burger.js"></script>
