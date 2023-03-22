@@ -19,7 +19,7 @@ menuBurger.addEventListener('click', function () {
 // Début du script formulaire de contact
 
 const message =
-  "Merci d'avoir pris le temps d'écrire ce message. On reviens vers toi ASAP!";
+  "Merci d'avoir pris le temps d'écrire ce message. L'équipe de Brain Forge revient vers toi au plus vite!";
 
 const form = document.getElementById("contact-form")
 
