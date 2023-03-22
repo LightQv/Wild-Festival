@@ -243,7 +243,7 @@ section .countdown div:not(:first-of-type) {
 }
 
 .slides-container {
-    height: 70vh;
+    height: 84vh;
     width: 100%;
     display: flex;
     list-style: none;
@@ -301,12 +301,23 @@ section .countdown div:not(:first-of-type) {
 .slideInfo {
     display: none;
     font-weight: bold;
-    color: var(--mainTitleColor);
 }
 
 .slideInfo.is-active {
     display: flex;
+    height: 56vh;
+    background-color: var(--backgroundColorAlt);
+    background-size: cover;
     backdrop-filter: blur(3px);
+    color: var(--textColorAlt);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.infoText {
+    overflow-x: scroll;
 }
 
 .slide.is-inactive {
@@ -322,6 +333,7 @@ section .countdown div:not(:first-of-type) {
     height: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
+    overflow-x: none;
 }
 
 .slide2 {
@@ -651,23 +663,46 @@ textarea {
     margin-right: 1rem;
 }
 
-.socialNetwork>img {
+.socialNetwork img {
     display: inline-block;
     width: 30px;
 }
 
-.socialNetwork>img:last-of-type {
+.socialNetwork img:last-of-type {
     margin-left: 0.3rem;
 }
+
+.footerProg {
+    display: none;
+    position: absolute;
+    right: 1vh;
+    bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.footerProg>img {
+    display: inline-block;
+    width: 30px;
+}
+
+.footerProg.is-active {
+    display: initial;
+}
+
+
+
 
 /* Fin Social Network */
 /* Fin contact.html */
 
 @media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(0.45turn, var(--backgroundColor), var(--backgroundColorAltLight));
+    }
 
     /* index.html */
     .homePage>h1 {
-        font-size: 3rem;
+        font-size: 3.1rem;
     }
 
     section .countdown {
@@ -679,7 +714,7 @@ textarea {
     }
 
     .homePage>h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: normal;
         text-align: end;
     }
@@ -697,6 +732,15 @@ textarea {
         margin-top: 44vh;
     }
 
+    /* programmation.html */
+    .progBody {
+        background: linear-gradient(0.135turn, var(--backgroundColor), var(--backgroundColorAltLight));
+    }
+
+    .slides-container {
+        overflow: hidden;
+    }
+
     /* billetterie.html & contact.html */
     .packContainer {
         max-width: 60vw;
@@ -708,5 +752,17 @@ textarea {
         max-width: 60vw;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* billetterie.html */
+    #desktopForm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.3rem;
+        width: 50%;
+    }
+
+    .down-arrow-formules {
+        margin-left: 15vw;
     }
 }
