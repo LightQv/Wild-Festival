@@ -35,21 +35,16 @@ const lastName = document.getElementById('lastname')
 const mail = document.getElementById('email')
 const selectOption = document.getElementById('option-select')
 
-// const optionField = document.querySelector('#option-field')
-// const firstnameField = document.querySelector('#firstname-field')
-// const lastnameField = document.querySelector('#lastname-field')
-// const emailField = document.querySelector('#email-field')
-
 const ticketSlide = document.getElementById('ticket');
 const optionForm = document.getElementById("option-form")
 
 optionForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    
+
     if (selectOption.value == "") {
-        alert("Oups! Tu n'as pas choisi ta formule!")
+        alert("Oups! Tu n'as pas choisi ton pass!")
     }
-    
+
     else {
         document.getElementById("firstname-field").innerText = `Prénom : ${firstName.value}`;
         document.getElementById("lastname-field").innerText = `Nom : ${lastName.value}`;
@@ -58,16 +53,4 @@ optionForm.addEventListener("submit", function (event) {
         ticketSlide.classList.toggle('is-active');
     }
 })
-
-//  Début du script ticket
-/*
-const returnButton = document.getElementById('icon-left-arrow')
-
-returnButton.addEventListener("click", function () {
-    window.open('billetterie.html', '_blank');
-})
-
-
-*/
-
 
