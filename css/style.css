@@ -24,7 +24,7 @@ body {
 }
 
 .indexBody {
-    background-image: url("/Assets/home-background.jpg");
+    background-image: url("./Assets/home-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -265,37 +265,49 @@ section .countdown div:not(:first-of-type) {
     font-weight: bold;
     cursor: pointer;
 }
+.infoButton2 {
+    margin: 0.2rem;
+    margin-left: 0;
+    color: var(--textColor);
+    background-color: var(--backgroundColorAlt);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border-style: hidden;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 #slide1 {
-    background-image: url("/Assets/Pictures/rockband1.jpeg");
+    background-image: url("./Assets/Pictures/rockband1.jpeg");
 }
 
 #slide2 {
-    background-image: url("/Assets/Pictures/rockband2.webp");
+    background-image: url("./Assets/Pictures/rockband2.webp");
 }
 
 #slide3 {
-    background-image: url("/Assets/Pictures/rockband3.jpg");
+    background-image: url("./Assets/Pictures/rockband3.jpg");
 }
 
 #slide4 {
-    background-image: url("/Assets/Pictures/rockband4.1.jpg");
+    background-image: url("./Assets/Pictures/rockband4.1.jpg");
 }
 
 #slide5 {
-    background-image: url("/Assets/Pictures/machines.jpg");
+    background-image: url("./Assets/Pictures/machines.jpg");
 }
 
 #slide6 {
-    background-image: url("/Assets/Pictures/techno4.jpg");
+    background-image: url("./Assets/Pictures/techno4.jpg");
 }
 
 #slide7 {
-    background-image: url("/Assets/Pictures/djscript.jpg");
+    background-image: url("./Assets/Pictures/djscript.jpg");
 }
 
 #slide8 {
-    background-image: url("/Assets/Pictures/techno3.jpg");
+    background-image: url("./Assets/Pictures/techno3.jpg");
 }
 
 .slideInfo {
@@ -303,7 +315,25 @@ section .countdown div:not(:first-of-type) {
     font-weight: bold;
 }
 
+.slideInfo2 {
+    display: none;
+    font-weight: bold;
+}
+
 .slideInfo.is-active {
+    display: flex;
+    height: 56vh;
+    background-color: var(--backgroundColorAlt);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    color: var(--textColor);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.slideInfo2.is-active {
     display: flex;
     height: 56vh;
     background-color: var(--backgroundColorAlt);
@@ -323,7 +353,9 @@ section .countdown div:not(:first-of-type) {
 .slide.is-inactive {
     filter: brightness(90%);
 }
-
+.slide2.is-inactive {
+    filter: brightness(90%);
+}
 .slide {
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,6 +377,7 @@ section .countdown div:not(:first-of-type) {
     height: 100%;
     flex: 1 0 100%;
     scroll-snap-align: start;
+    overflow-x: none;
 }
 
 .slideText {
@@ -683,12 +716,27 @@ textarea {
     margin-right: 1rem;
 }
 
+.footerProg2 {
+    display: none;
+    position: absolute;
+    right: 1vh;
+    bottom: 1rem;
+    margin-right: 1rem;
+}
+
 .footerProg img {
+    display: inline-block;
+    width: 30px;
+}
+.footerProg2 img {
     display: inline-block;
     width: 30px;
 }
 
 .footerProg.is-active {
+    display: initial;
+}
+.footerProg2.is-active {
     display: initial;
 }
 
@@ -747,6 +795,17 @@ textarea {
     }
 
     .slideInfo.is-active {
+        height: auto;
+        background-color: var(--backgroundColorAltLightTransparent);
+        color: var(--textColor);
+        margin-top: 10vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        padding: 4.2rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .slideInfo2.is-active {
         height: auto;
         background-color: var(--backgroundColorAltLightTransparent);
         color: var(--textColor);

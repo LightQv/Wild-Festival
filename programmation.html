@@ -1,278 +1,345 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WildFest Programmation</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>WildFest Programmation</title>
-</head>
-
-<body class="progBody">
-  <nav>
-    <div class="navIcon">
-      <button class="hamburger">
-        <div class="bar"></div>
-      </button>
-    </div>
-    <div class="mobileNav">
-      <ul>
-        <li>
-          <a href="index.html">Accueil</a>
-          <h4>Décompte!</h4>
-        </li>
-        <li>
-          <a href="programmation.html">Program'</a>
-          <h4>Les artistes.</h4>
-        </li>
-        <li>
-          <a href="billetterie.html">Billetterie</a>
-          <h4>Réserve ta place!</h4>
-        </li>
-        <li>
-          <a href="contact.html">Perdus ?</a>
-          <h4>Contact</h4>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div class="pageContainer" id="programmationContainer">
-      <section id="day1" class="dayProg">
-        <section class="pageTitle" id="progTitle">
-          <h2>Nuit #1</h2>
-          <h1>Rock 'n' Roll</h1>
+  <body class="progBody">
+    <nav>
+      <div class="navIcon">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="mobileNav">
+        <ul>
+          <li>
+            <a href="index.html">Accueil</a>
+            <h4>Décompte!</h4>
+          </li>
+          <li>
+            <a href="programmation.html">Program'</a>
+            <h4>Les artistes.</h4>
+          </li>
+          <li>
+            <a href="billetterie.html">Billetterie</a>
+            <h4>Réserve ta place!</h4>
+          </li>
+          <li>
+            <a href="contact.html">Perdus ?</a>
+            <h4>Contact</h4>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="pageContainer" id="programmationContainer">
+        <section id="day1" class="dayProg">
+          <section class="pageTitle" id="progTitle">
+            <h2>Nuit #1</h2>
+            <h1>Rock 'n' Roll</h1>
+          </section>
+          <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+            <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+            <ul class="slides-container" id="slides-container">
+              <li class="slide" id="slide1">
+                <div class="slideText">
+                  <h2>Ecmallica - 20h</h2>
+                  <p>Hard Rock</p>
+                  <button class="infoButton">+ infos</button>
+                  <div class="slideInfo" id="slide1info">
+                    <p class="infoText">
+                      Ecmallica est un groupe de hard rock formé en 2019 par
+                      quatre amis qui partageaient une passion pour le rock et
+                      pour EcmaScript, avec le désir de créer quelque chose
+                      d'unique. Le groupe se compose du chanteur et guitariste
+                      principal Max, du bassiste Eric, du batteur Luke et du
+                      guitariste rythmique Alex. Leur son est une fusion
+                      d'influences heavy metal, punk et rock classique.
+                      Ecmallica a rapidement gagné une place dans la scène
+                      musicale locale.
+                    </p>
+                  </div>
+                </div>
+                <footer class="footerProg">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide" id="slide2">
+                <div class="slideText">
+                  <h2>String Floyd - 21h</h2>
+                  <p>Wild Rock</p>
+                  <button class="infoButton">+ infos</button>
+                  <div class="slideInfo">
+                    <p class="infoText">
+                      String Floyd est un groupe de rock dynamique et innovant
+                      connu pour son style de musique unique qui mélange
+                      l'énergie brute du rock classique avec les mélodies
+                      complexes des instruments à cordes. Le groupe a été formé
+                      en 2018 par un groupe de musiciens talentueux qui
+                      partageaient une passion pour l'exploration de nouveaux
+                      territoires sonores et la remise en question des limites
+                      du rock traditionnel. Objets, Strings, Arrays, rien de
+                      leur fait peur.
+                    </p>
+                  </div>
+                </div>
+                <footer class="footerProg">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide" id="slide3">
+                <div class="slideText">
+                  <h2>Fullstack Sabbath - 22h</h2>
+                  <p>Code Rock</p>
+                  <button class="infoButton">+ infos</button>
+                  <div class="slideInfo">
+                    <p class="infoText">
+                      Fullstack Sabbath est un groupe de musique innovant et
+                      passionnant qui a été formé en 2020 à San Francisco par un
+                      groupe de développeurs web chevronnés. Inspirés à la fois
+                      par l'univers musical de Black Sabbath et l'état d'esprit
+                      des développeurs fullstack, ils ont créé un tout nouveau
+                      genre musical appelé le "Code Rock". Leur son unique
+                      combine des riffs de guitare lourds et puissants avec des
+                      paroles inspirées du développement web et de la
+                      technologie.
+                    </p>
+                  </div>
+                </div>
+                <footer class="footerProg">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide" id="slide4">
+                <div class="slideText">
+                  <h2>The Rolling Pierre - 23h</h2>
+                  <p>Classic Rock</p>
+                  <button class="infoButton">+ infos</button>
+                  <div class="slideInfo">
+                    <p class="infoText">
+                      The Rolling Pierre est un groupe de rock légendaire formé
+                      en 1962, dont la basse est tenue par le talentueux Pierre
+                      Paillard. Connus pour leur énergie sur scène et leur son
+                      unique, le groupe a marqué l'histoire de la musique avec
+                      des tubes inoubliables tels que "(I Can't Get No)
+                      Satisfaction" et "Paint It Black". Depuis plus de 50 ans,
+                      The Rolling Pierre continue de captiver des publics à
+                      travers le monde avec leur musique intemporelle et leur
+                      attitude rebelle.
+                    </p>
+                  </div>
+                </div>
+                <footer class="footerProg">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+            </ul>
+          </section>
         </section>
-        <section class="slider-wrapper">
-          <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-          <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
-          <ul class="slides-container" id="slides-container">
-            <li class="slide" id="slide1">
-              <div class="slideText">
-                <h2>Ecmallica - 20h</h2>
-                <p>Hard Rock</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo" id="slide1info">
-                  <p class="infoText">
-                    Ecmallica est un groupe de hard rock formé en 2019 par
-                    quatre amis qui partageaient une passion pour le rock et
-                    pour EcmaScript, avec le désir de créer quelque chose
-                    d'unique. Le groupe se compose du chanteur et guitariste
-                    principal Max, du bassiste Eric, du batteur Luke et du
-                    guitariste rythmique Alex. Leur son est une fusion
-                    d'influences heavy metal, punk et rock classique. Ecmallica a rapidement gagné une
-                    place dans la scène musicale locale.
-                  </p>
+
+        <section id="day2" class="dayProg">
+          <section class="pageTitle" id="progTitle">
+            <h2>Nuit #2</h2>
+            <h1>Electro</h1>
+          </section>
+          <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev2">&#8249;</button>
+            <button class="slide-arrow" id="slide-arrow-next2">&#8250;</button>
+
+            <ul class="slides-container" id="slides-container2">
+              <li class="slide2" id="slide5">
+                <div class="slideText">
+                  <h2>Margaux & the Machines - 20h</h2>
+                  <p>Pop Electro</p>
+                  <button class="infoButton2">+ infos</button>
+                  <div class="slideInfo2">
+                    <p class="infoText">
+                      Margaux and the Machines est un groupe de musique unique
+                      et inspirant formé en 2015 au Canada, mené par chanteuse
+                      charismatique Margaux De Filippis. Leur musique mélange
+                      des influences pop, rock et électroniques pour créer un
+                      son envoûtant et original. Le groupe est autant connu pour
+                      ses paroles que pour leurs performances envoûtantes en
+                      live. Depuis leur création, Margaux and the Machines ne
+                      cesse de se produire dans des salles prestigieuses à
+                      travers le monde.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide" id="slide2">
-              <div class="slideText">
-                <h2>String Floyd - 21h</h2>
-                <p>Wild Rock</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    String Floyd est un groupe de rock dynamique et innovant
-                    connu pour son style de musique unique qui mélange
-                    l'énergie brute du rock classique avec les mélodies
-                    complexes des instruments à cordes. Le groupe a été formé
-                    en 2018 par un groupe de musiciens talentueux qui
-                    partageaient une passion pour l'exploration de nouveaux
-                    territoires sonores et la remise en question des limites
-                    du rock traditionnel. Objets, Strings, Arrays, rien de
-                    leur fait peur.
-                  </p>
+                <footer class="footerProg2">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide2" id="slide6">
+                <div class="slideText">
+                  <h2>Mister Moumoute - 21h</h2>
+                  <p>Wild Techno</p>
+                  <button class="infoButton2">+ infos</button>
+                  <div class="slideInfo2">
+                    <p class="infoText">
+                      Mister Moumoute est un groupe de musique électro/techno
+                      qui s'est fait connaître pour son style unique. Les
+                      membres du groupe ont une passion pour les blagues et
+                      l'humour, et cela se reflète dans leur musique et leurs
+                      performances live. Leur musique est une fusion de rythmes
+                      électro, de mélodies accrocheuses et de paroles décalées.
+                      Les fans de Mister Moumoute apprécient non seulement leur
+                      musique entraînante, mais aussi leur personnalité drôle et
+                      décalée qui se reflète dans leur comportement sur scène.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide" id="slide3">
-              <div class="slideText">
-                <h2>Fullstack Sabbath - 22h</h2>
-                <p>Code Rock</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    Fullstack Sabbath est un groupe de musique innovant et
-                    passionnant qui a été formé en 2020 à San Francisco par un
-                    groupe de développeurs web chevronnés. Inspirés à la fois
-                    par l'univers musical de Black Sabbath et l'état d'esprit
-                    des développeurs fullstack, ils ont créé un tout nouveau
-                    genre musical appelé le "Code Rock". Leur son unique
-                    combine des riffs de guitare lourds et puissants avec des
-                    paroles inspirées du développement web et de la
-                    technologie.
-                  </p>
+                <footer class="footerProg2">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide2" id="slide7">
+                <div class="slideText">
+                  <h2>DJ Script - 22h</h2>
+                  <p>Hip-Hop Electro</p>
+                  <button class="infoButton2">+ infos</button>
+                  <div class="slideInfo2">
+                    <p class="infoText">
+                      DJ et producteur de rap et hip-hop depuis son plus jeune
+                      âge. En plus de son amour pour la musique, il est
+                      également passionné par le développement web et la
+                      programmation JavaScript. Son style de musique unique est
+                      une fusion de rythmes électro et de paroles rap
+                      percutantes, ce qui donne une énergie et une ambiance
+                      inimitables. Il est connu pour sa capacité à mélanger des
+                      samples de code JavaScript dans ses sets de DJ, créant
+                      ainsi une ambiance unique et originale.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide" id="slide4">
-              <div class="slideText">
-                <h2>The Rolling Pierre - 23h</h2>
-                <p>Classic Rock</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    The Rolling Pierre est un groupe de rock légendaire formé
-                    en 1962, dont la basse est tenue par le talentueux Pierre
-                    Paillard. Connus pour leur énergie sur scène et leur son
-                    unique, le groupe a marqué l'histoire de la musique avec
-                    des tubes inoubliables tels que "(I Can't Get No)
-                    Satisfaction" et "Paint It Black". Depuis plus de 50 ans,
-                    The Rolling Pierre continue de captiver des publics à
-                    travers le monde avec leur musique intemporelle et leur
-                    attitude rebelle.
-                  </p>
+                <footer class="footerProg2">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+              <li class="slide2" id="slide8">
+                <div class="slideText">
+                  <h2>David GitAdd - 23h</h2>
+                  <p>Techno</p>
+                  <button class="infoButton2">+ infos</button>
+                  <div class="slideInfo2">
+                    <p class="infoText">
+                      David Gitadd est un DJ et producteur de musique
+                      électronique, mais aussi connu pour sa passion pour Git et
+                      le développement web. Son amour pour Git est tel qu'il
+                      aime faire des add, commits et pushs autant que de
+                      produire de la musique. Son style musical unique est une
+                      fusion de mélodies électro entraînantes, de rythmes
+                      dancefloor et de sonorités inspirées par les technologies
+                      de développement logiciel. Les fans de David Gitadd sont
+                      séduits par son énergie contagieuse et sa créativité sans
+                      limites.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-          </ul>
+                <footer class="footerProg2">
+                  <img
+                    src="./Assets/Icons/icon-facebook.png"
+                    alt="facebook-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-twitter.png"
+                    alt="twitter-icon"
+                  />
+                  <img
+                    src="./Assets/Icons/icon-instagram.png"
+                    alt="instagram-icon"
+                  />
+                </footer>
+              </li>
+            </ul>
+          </section>
         </section>
-      </section>
-
-
-      <section id="day2" class="dayProg">
-        <section class="pageTitle" id="progTitle">
-          <h2>Nuit #2</h2>
-          <h1>Electro</h1>
-        </section>
-        <section class="slider-wrapper">
-          <button class="slide-arrow" id="slide-arrow-prev2">&#8249;</button>
-          <button class="slide-arrow" id="slide-arrow-next2">&#8250;</button>
-
-          <ul class="slides-container" id="slides-container2">
-            <li class="slide2" id="slide5">
-              <div class="slideText">
-                <h2>Margaux & the Machines - 20h</h2>
-                <p>Pop Electro</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    Margaux and the Machines est un groupe de musique unique
-                    et inspirant formé en 2015 au Canada, mené par chanteuse
-                    charismatique Margaux De Filippis. Leur musique mélange
-                    des influences pop, rock et électroniques pour créer un
-                    son envoûtant et original. Le groupe est autant connu pour
-                    ses paroles que pour leurs performances envoûtantes en
-                    live. Depuis leur création, Margaux and the Machines ne
-                    cesse de se produire dans des salles prestigieuses à
-                    travers le monde.
-                  </p>
-                </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide" id="slide6">
-              <div class="slideText">
-                <h2>Mister Moumoute - 21h</h2>
-                <p>Wild Techno</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    Mister Moumoute est un groupe de musique électro/techno
-                    qui s'est fait connaître pour son style unique. Les
-                    membres du groupe ont une passion pour les blagues et
-                    l'humour, et cela se reflète dans leur musique et leurs
-                    performances live. Leur musique est une fusion de rythmes
-                    électro, de mélodies accrocheuses et de paroles décalées.
-                    Les fans de Mister Moumoute apprécient non seulement leur
-                    musique entraînante, mais aussi leur personnalité drôle et
-                    décalée qui se reflète dans leur comportement sur scène.
-                  </p>
-                </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide2" id="slide7">
-              <div class="slideText">
-                <h2>DJ Script - 22h</h2>
-                <p>Hip-Hop Electro</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    DJ et producteur de rap et hip-hop depuis son plus jeune
-                    âge. En plus de son amour pour la musique, il est
-                    également passionné par le développement web et la
-                    programmation JavaScript. Son style de musique unique est
-                    une fusion de rythmes électro et de paroles rap
-                    percutantes, ce qui donne une énergie et une ambiance
-                    inimitables. Il est connu pour sa capacité à mélanger des
-                    samples de code JavaScript dans ses sets de DJ, créant
-                    ainsi une ambiance unique et originale.
-                  </p>
-                </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-            <li class="slide2" id="slide8">
-              <div class="slideText">
-                <h2>David GitAdd - 23h</h2>
-                <p>Techno</p>
-                <button class="infoButton">+ infos</button>
-                <div class="slideInfo">
-                  <p class="infoText">
-                    David Gitadd est un DJ et producteur de musique
-                    électronique, mais aussi connu pour sa passion pour Git et
-                    le développement web. Son amour pour Git est tel qu'il
-                    aime faire des add, commits et pushs autant que de
-                    produire de la musique. Son style musical unique est une
-                    fusion de mélodies électro entraînantes, de rythmes
-                    dancefloor et de sonorités inspirées par les technologies
-                    de développement logiciel. Les fans de David Gitadd sont
-                    séduits par son énergie contagieuse et sa créativité sans
-                    limites.
-                  </p>
-                </div>
-              </div>
-              <footer class="footerProg">
-                <img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon">
-                <img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon">
-                <img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon">
-              </footer>
-            </li>
-          </ul>
-        </section>
-      </section>
-    </div>
-  </main>
-  <script src="js/programmation.js"></script>
-  <script src="js/burger.js"></script>
-</body>
-
+      </div>
+    </main>
+    <script src="js/programmation.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
 </html>

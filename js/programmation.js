@@ -13,6 +13,19 @@ infoButtons.forEach((infoButton, index) => {
   });
 });
 
+const infoButtons2 = document.querySelectorAll(".infoButton2");
+const slideInfos2 = document.querySelectorAll(".slideInfo2");
+const slides2 = document.querySelectorAll(".slide2");
+const footerProgs2 = document.querySelectorAll(".footerProg2");
+
+infoButtons2.forEach((infoButton, index) => {
+  infoButton.addEventListener("click", function () {
+    slideInfos2[index].classList.toggle("is-active");
+    slides2[index].classList.toggle("is-inactive");
+    footerProgs2[index].classList.toggle("is-active");
+  });
+});
+
 /* Début du Script Slider */
 
 const slidesContainer = document.getElementById("slides-container");
