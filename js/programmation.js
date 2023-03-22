@@ -3,11 +3,13 @@
 const infoButtons = document.querySelectorAll(".infoButton");
 const slideInfos = document.querySelectorAll(".slideInfo");
 const slides = document.querySelectorAll(".slide");
+const footerProgs = document.querySelectorAll(".footerProg");
 
 infoButtons.forEach((infoButton, index) => {
   infoButton.addEventListener("click", function () {
     slideInfos[index].classList.toggle("is-active");
     slides[index].classList.toggle("is-inactive");
+    footerProgs[index].classList.toggle("is-active");
   });
 });
 

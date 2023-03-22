@@ -97,33 +97,35 @@
       </section>
       <img class="down-arrow-formules" src="Assets/Icons/icon-down-arrow.png" alt="down arrow">
 
-      <section class="form">
-        <h3> C'est parti! </h3>
-        <form id="option-form">
-          <div>
-            <select name="choix de la formule" id="option-select">
-              <option value=""> Sélectionne ta formule </option>
-              <option value="Pass Une nuit"> Pass "Une nuit" </option>
-              <option value="Pass Deux nuits"> Pass "Deux nuits" </option>
-              <option value="Pass La totale"> Pass "La totale" </option>
-            </select>
-          </div>
-          <div>
-            <label for="lastname"></label>
-            <input type="text" name="lastname" id="lastname" placeholder="Nom"
-              maxlength="20" required>
-          </div>
-          <div>
-            <label for="firstname"> </label>
-            <input type="text" name="firstname" id="firstname" placeholder="Prénom"
-              maxlength="20" required>
-          </div>
-          <div>
-            <label for="email"> </label>
-            <input type="email" name="email" id="email" placeholder="Mail" required>
-          </div>
-          <button id="button-option-form" class="button" type="submit"> Envoyer </button>
-        </form>
+      <section class="formContainer">
+        <div class="form" id="option-form">
+          <h3>C'est parti!</h3>
+          <form id="desktopForm">
+            <div>
+              <select name="choix de la formule" id="choix_de_la_formule">
+                <option value="default value">Sélectionne ta formule</option>
+                <option value="Une nuit">Formule "Une nuit"</option>
+                <option value="Deux nuits">Formule "Deux nuits"</option>
+                <option value="La totale">Pass "La totale </option>
+              </select>
+            </div>
+            <div>
+              <label for="lastname"></label>
+              <input type="text" name="lastname" id="lastname" placeholder="Nom" required pattern="[A-Za-z]"
+                maxlength="20">
+            </div>
+            <div>
+              <label for="firstname"> </label>
+              <input type="text" name="firstname" id="firstname" placeholder="Prénom" required pattern="[A-Za-z]"
+                maxlength="20">
+            </div>
+            <div>
+              <label for="email"> </label>
+              <input type="email" name="email" id="email" placeholder="Mail" required>
+            </div>
+            <button class="button" type="button"> Envoyer </button>
+          </form>
+        </div>
       </section>
     </div>
     <div id="ticket">
