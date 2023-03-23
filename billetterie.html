@@ -1,161 +1,200 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WildFest Billetterie</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>WildFest Billetterie</title>
-</head>
-
-<body>
-  <nav>
-    <div class="navIcon">
-      <button class="hamburger">
-        <div class="bar"></div>
-      </button>
-    </div>
-    <div class="mobileNav">
-      <ul>
-        <li>
-          <a href="index.html">Accueil</a>
-          <h4>Décompte!</h4>
-        </li>
-        <li>
-          <a href="programmation.html">Program'</a>
-          <h4>Les artistes.</h4>
-        </li>
-        <li>
-          <a href="billetterie.html">Billetterie</a>
-          <h4>Réserve ta place!</h4>
-        </li>
-        <li>
-          <a href="contact.html">Perdus ?</a>
-          <h4>Contact</h4>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div class="pageContainer" id="billetterieContainer">
-      <section class="pageTitle">
-        <h2>Billetterie</h2>
-        <h1>Réserve ta place!</h1>
-      </section>
-      <section class="packContainer">
-        <h3>Les formules</h3>
-        <div id="cards-grid">
-          <div class="card" id="card1night">
-            <div class="card-side card-front">
-              <div class="container">
-                <h4>"Une nuit"</h4>
-                <p>Prix : 30€</p>
-                <img src="./Assets/Icons/icon-touch.png" alt="icon-touch">
+  <body>
+    <nav>
+      <div class="navIcon">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+      <div class="mobileNav">
+        <ul>
+          <li>
+            <a href="index.html">Accueil</a>
+            <h4>Décompte!</h4>
+          </li>
+          <li>
+            <a href="programmation.html">Program'</a>
+            <h4>Les artistes.</h4>
+          </li>
+          <li>
+            <a href="billetterie.html">Billetterie</a>
+            <h4>Réserve ta place!</h4>
+          </li>
+          <li>
+            <a href="contact.html">Perdus ?</a>
+            <h4>Contact</h4>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="pageContainer" id="billetterieContainer">
+        <section class="pageTitle">
+          <h2>Billetterie</h2>
+          <h1>Réserve ta place!</h1>
+        </section>
+        <section class="packContainer">
+          <h3>Les formules</h3>
+          <div id="cards-grid">
+            <div class="card" id="card1night">
+              <div class="card-side card-front">
+                <div class="container">
+                  <h4>"Une nuit"</h4>
+                  <p>Prix : 30€</p>
+                  <img src="./Assets/Icons/icon-touch.png" alt="icon-touch" />
+                </div>
+              </div>
+              <div class="card-side card-back">
+                <div class="container">
+                  <p>
+                    -Entrée pour une nuit, au choix entre le samedi et le
+                    dimanche.
+                  </p>
+                  <p>-Une consommation offerte.</p>
+                </div>
               </div>
             </div>
-            <div class="card-side card-back">
-              <div class="container">
-                <p>Entrée pour une nuit, au choix entre le samedi et le dimanche.</p>
-                <p>Une consommation offerte.</p>
+            <div class="card" id="card2night">
+              <div class="card-side card-front">
+                <div class="container">
+                  <h4>"Deux nuits"</h4>
+                  <p>Prix : 50€</p>
+                  <img src="./Assets/Icons/icon-touch.png" alt="icon-touch" />
+                </div>
+              </div>
+              <div class="card-side card-back">
+                <div class="container">
+                  <p>-Entrée pour tout le week-end.</p>
+                  <p>
+                    -Deux consommations offertes à utiliser au choix sur
+                    l'ensemble des deux nuits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card-all-inclusive">
+              <div class="card-side card-front">
+                <div class="container">
+                  <h4>"La totale"</h4>
+                  <p>Prix : 80€</p>
+                  <img src="./Assets/Icons/icon-touch.png" alt="icon-touch" />
+                </div>
+              </div>
+              <div class="card-side card-back">
+                <div class="container">
+                  <p>-Entrée pour tout le week-end avec un accès VIP.</p>
+                  <p>-Quatre consommations offertes.</p>
+                  <p>-Un t-shirt collector de l'événement.</p>
+                  <p>
+                    -Une chance d'obtenir une place backstage pour l'artiste de
+                    ton choix.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card" id="card2night">
-            <div class="card-side card-front">
-              <div class="container">
-                <h4>"Deux nuits"</h4>
-                <p>Prix : 50€</p>
-                <img src="./Assets/Icons/icon-touch.png" alt="icon-touch">
-              </div>
-            </div>
-            <div class="card-side card-back">
-              <div class="container">
-                <p>Entrée pour tout le week-end.</p>
-                <p>Deux consommations offertes à utiliser au choix sur l'ensemble des deux nuits.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card" id="card-all-inclusive">
-            <div class="card-side card-front">
-              <div class="container">
-                <h4>"La totale"</h4>
-                <p>Prix : 80€</p>
-                <img src="./Assets/Icons/icon-touch.png" alt="icon-touch">
-              </div>
-            </div>
-            <div class="card-side card-back">
-              <div class="container">
-                <p>Entrée pour tout le week-end avec un accès VIP.</p>
-                <p>Quatre consommations offertes.</p>
-                <p>Un t-shirt collecter de l'événement.</p>
-                <p>Une chance d'obtenir une place backstage pour l'artiste de ton choix.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <img class="down-arrow-formules" src="./Assets/Icons/icon-down-arrow.png" alt="down arrow">
+        </section>
+        <img
+          class="down-arrow-formules"
+          src="./Assets/Icons/icon-down-arrow.png"
+          alt="down arrow"
+        />
 
-      <section class="formContainer">
-        <div class="form" id="desktopForm">
-          <h3>C'est parti!</h3>
-          <form id="option-form">
-            <div>
-              <select name="choix de la formule" id="option-select">
-                <option value="">Sélectionne ton pass</option>
-                <option value="Pass `Une nuit`">"Une nuit"</option>
-                <option value="Pass `Deux nuits`">"Deux nuits"</option>
-                <option value="Pass `La totale`">"La totale"</option>
-              </select>
-            </div>
-            <div>
-              <label for="lastname"></label>
-              <input type="text" name="lastname" id="lastname" placeholder="Nom" maxlength="20">
-            </div>
-            <div>
-              <label for="firstname"> </label>
-              <input type="text" name="firstname" id="firstname" placeholder="Prénom" maxlength="20">
-            </div>
-            <div>
-              <label for="email"> </label>
-              <input type="email" name="email" id="email" placeholder="Mail" required>
-            </div>
-            <button id="button-option-form" class="button" type="submit">Envoyer</button>
-          </form>
-        </div>
-      </section>
-    </div>
-    <div class="pageContainer" id="ticket">
-      <section class="pageTitle">
-        <h2>Merci!</h2>
-        <h1>À bientôt!</h1>
-      </section>
-      <section class="ticketContainer">
-        <h3>Voici ton billet :</h3>
-        <img src="./Assets/Icons/QR_code.png" alt="QR Code" id="codeQR">
-        <h5 id="option-field">Pass choisi</h5>
-        <h5 id="lastname-field">Nom</h5>
-        <h5 id="firstname-field">Prénom</h5>
-        <h5 id="email-field">Mail</h5>
-        <h2 id="enjoyMessage">Enjoy!</h2>
-        <a href="billetterie.html">
-          <img src="./Assets/Icons/icon-left-arrow.png" alt="icon-left-arrow" id="down-arrow-ticket">
-        </a>
-      </section>
-    </div>
-    <footer class="socialNetwork">
-      <a href="https://fr-fr.facebook.com/WildCodeSchool/"><img src="./Assets/Icons/icon-facebook.png"
-          alt="facebook-icon"></a>
-      <a href="https://twitter.com/WildCodeSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
-          src="./Assets/Icons/icon-twitter.png" alt="twitter-icon"></a>
-      <a
-        href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjjjZnf1-_9AhWGh_0HHd-JCP8QFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fwildcodeschoolofficial%2F%3Fhl%3Dfr&usg=AOvVaw26IG4g8qiGfW1mkxZosRqR"><img
-          src="./Assets/Icons/icon-instagram.png" alt="instagram-icon"></a>
-    </footer>
-  </main>
-  <script src="js/billetterie.js"></script>
-  <script src="js/burger.js"></script>
-</body>
-
+        <section class="formContainer">
+          <div class="form" id="desktopForm">
+            <h3>C'est parti!</h3>
+            <form id="option-form">
+              <div>
+                <select name="choix de la formule" id="option-select">
+                  <option value="">Sélectionne ton pass</option>
+                  <option value="Pass `Une nuit`">"Une nuit"</option>
+                  <option value="Pass `Deux nuits`">"Deux nuits"</option>
+                  <option value="Pass `La totale`">"La totale"</option>
+                </select>
+              </div>
+              <div>
+                <label for="lastname"></label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Nom"
+                  maxlength="20"
+                />
+              </div>
+              <div>
+                <label for="firstname"> </label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Prénom"
+                  maxlength="20"
+                />
+              </div>
+              <div>
+                <label for="email"> </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Mail"
+                  required
+                />
+              </div>
+              <button id="button-option-form" class="button" type="submit">
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="pageContainer" id="ticket">
+        <section class="pageTitle">
+          <h2>Merci!</h2>
+          <h1>À bientôt!</h1>
+        </section>
+        <section class="ticketContainer">
+          <h3>Voici ton billet :</h3>
+          <img src="./Assets/Icons/QR_code.png" alt="QR Code" id="codeQR" />
+          <h5 id="option-field">Pass choisi</h5>
+          <h5 id="lastname-field">Nom</h5>
+          <h5 id="firstname-field">Prénom</h5>
+          <h5 id="email-field">Mail</h5>
+          <h2 id="enjoyMessage">Enjoy!</h2>
+          <a href="billetterie.html">
+            <img
+              src="./Assets/Icons/icon-left-arrow.png"
+              alt="icon-left-arrow"
+              id="down-arrow-ticket"
+            />
+          </a>
+        </section>
+      </div>
+      <footer class="socialNetwork">
+        <a href="https://fr-fr.facebook.com/WildCodeSchool/"
+          ><img src="./Assets/Icons/icon-facebook.png" alt="facebook-icon"
+        /></a>
+        <a
+          href="https://twitter.com/WildCodeSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ><img src="./Assets/Icons/icon-twitter.png" alt="twitter-icon"
+        /></a>
+        <a
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjjjZnf1-_9AhWGh_0HHd-JCP8QFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Fwildcodeschoolofficial%2F%3Fhl%3Dfr&usg=AOvVaw26IG4g8qiGfW1mkxZosRqR"
+          ><img src="./Assets/Icons/icon-instagram.png" alt="instagram-icon"
+        /></a>
+      </footer>
+    </main>
+    <script src="js/billetterie.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
 </html>

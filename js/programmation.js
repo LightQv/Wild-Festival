@@ -13,6 +13,41 @@ infoButtons.forEach((infoButton, index) => {
   });
 });
 
+/*Script closeButton*/
+const closeButtons = document.querySelectorAll(".closeButton");
+
+closeButtons.forEach((infoButton, index) => {
+  infoButton.addEventListener("click", function () {
+    slideInfos[index].classList.remove("is-active");
+    slides[index].classList.remove("is-inactive");
+    footerProgs[index].classList.remove("is-active");
+  });
+});
+
+//infoButton
+const infoButtons2 = document.querySelectorAll(".infoButton2");
+const slideInfos2 = document.querySelectorAll(".slideInfo2");
+const slides2 = document.querySelectorAll(".slide2");
+const footerProgs2 = document.querySelectorAll(".footerProg2");
+
+infoButtons2.forEach((infoButton, index) => {
+  infoButton.addEventListener("click", function () {
+    slideInfos2[index].classList.toggle("is-active");
+    slides2[index].classList.toggle("is-inactive");
+    footerProgs2[index].classList.toggle("is-active");
+  });
+});
+/*Script closeButton2*/
+const closeButtons2 = document.querySelectorAll(".closeButton2");
+
+closeButtons2.forEach((infoButton, index) => {
+  infoButton.addEventListener("click", function () {
+    slideInfos2[index].classList.remove("is-active");
+    slides2[index].classList.remove("is-inactive");
+    footerProgs2[index].classList.remove("is-active");
+  });
+});
+
 /* Début du Script Slider */
 
 const slidesContainer = document.getElementById("slides-container");
