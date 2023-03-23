@@ -278,6 +278,38 @@ section .countdown div:not(:first-of-type) {
     cursor: pointer;
 }
 
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0;
+    color: var(--textColor);
+    background-color: var(--backgroundColorAlt);
+    border-radius: 0.5rem;
+    border-style: hidden;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeButton2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0;
+    color: var(--textColor);
+    background-color: var(--mainColor);
+    border-radius: 0.5rem;
+    border-style: hidden;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #slide1 {
     background-image: url("./Assets/Pictures/rockband1.jpeg");
 }
@@ -323,7 +355,7 @@ section .countdown div:not(:first-of-type) {
 .slideInfo.is-active {
     display: flex;
     height: 56vh;
-    background-color: var(--backgroundColorAlt);
+    background-color: var(--backgroundColorAltl);
     background-size: cover;
     backdrop-filter: blur(3px);
     color: var(--textColor);
