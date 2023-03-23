@@ -265,6 +265,7 @@ section .countdown div:not(:first-of-type) {
     font-weight: bold;
     cursor: pointer;
 }
+
 .infoButton2 {
     margin: 0.2rem;
     margin-left: 0;
@@ -385,9 +386,11 @@ section .countdown div:not(:first-of-type) {
 .slide.is-inactive {
     filter: brightness(90%);
 }
+
 .slide2.is-inactive {
     filter: brightness(90%);
 }
+
 .slide {
     background-size: cover;
     background-repeat: no-repeat;
@@ -760,6 +763,7 @@ textarea {
     display: inline-block;
     width: 30px;
 }
+
 .footerProg2 img {
     display: inline-block;
     width: 30px;
@@ -768,6 +772,7 @@ textarea {
 .footerProg.is-active {
     display: initial;
 }
+
 .footerProg2.is-active {
     display: initial;
 }
@@ -837,6 +842,7 @@ textarea {
         font-size: 1.3rem;
         text-align: center;
     }
+
     .slideInfo2.is-active {
         height: auto;
         background-color: var(--backgroundColorAltLightTransparent);
