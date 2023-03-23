@@ -24,7 +24,7 @@ body {
 }
 
 .indexBody {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/home-background.jpg");
+    background-image: url("../Assets/home-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -312,35 +312,35 @@ section .countdown div:not(:first-of-type) {
 }
 
 #slide1 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband1.jpeg");
+    background-image: url("../Assets/Pictures/rockband1.jpeg");
 }
 
 #slide2 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband2.webp");
+    background-image: url("../Assets/Pictures/rockband2.webp");
 }
 
 #slide3 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband3.jpg");
+    background-image: url("../Assets/Pictures/rockband3.jpg");
 }
 
 #slide4 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband4.1.jpg");
+    background-image: url("../Assets/Pictures/rockband4.1.jpg");
 }
 
 #slide5 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/machines.jpg");
+    background-image: url("../Assets/Pictures/machines.jpg");
 }
 
 #slide6 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/techno4.jpg");
+    background-image: url("../Assets/Pictures/techno4.jpg");
 }
 
 #slide7 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/djscript.jpg");
+    background-image: url("../Assets/Pictures/djscript.jpg");
 }
 
 #slide8 {
-    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/techno3.jpg");
+    background-image: url("../Assets/Pictures/techno3.jpg");
 }
 
 .slideInfo {
@@ -839,10 +839,12 @@ textarea {
     .slider-wrapper {
         height: 87.2%;
         padding-bottom: 1.4rem;
+        overflow-x: hidden;
     }
 
     .slides-container {
         height: 100%;
+        overflow-x: hidden;
     }
 
     .slideInfo.is-active {
@@ -931,19 +933,18 @@ textarea {
 
     .ticketContainer {
         max-width: 30rem;
-        max-height: 80vh;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: column;
         border: 3px solid;
         border-radius: 0.8rem;
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     #codeQR {
-        padding: 1.5rem;
-        height: 60%;
+        padding: 1rem;
+        height: 25rem;
     }
 
     .ticketContainer>h5 {
