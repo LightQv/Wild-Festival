@@ -627,6 +627,23 @@ section .countdown div:not(:first-of-type) {
 
 /* Début de la page "ticket" */
 
+.closeTicketButton{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 95%;
+    color: var(--textColor);
+    background-color: var(--backgroundColorAlt);
+    border-radius: 0.5rem;
+    border-style: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #ticket {
     position: fixed;
     bottom: 100%;
