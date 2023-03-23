@@ -629,14 +629,11 @@ section .countdown div:not(:first-of-type) {
 
 .closeTicketButton{
     position: relative;
-    top: 10px;
-    right: 10px;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     margin-left: 95%;
     color: var(--textColor);
-    background-color: var(--backgroundColorAlt);
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     border-style: hidden;
     text-align: center;
     font-size: 1.5rem;
@@ -662,7 +659,7 @@ section .countdown div:not(:first-of-type) {
 }
 
 .ticketContainer>h3 {
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 #ticket.is-active {
