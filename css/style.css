@@ -24,7 +24,7 @@ body {
 }
 
 .indexBody {
-    background-image: url("./Assets/home-background.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/home-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -265,6 +265,7 @@ section .countdown div:not(:first-of-type) {
     font-weight: bold;
     cursor: pointer;
 }
+
 .infoButton2 {
     margin: 0.2rem;
     margin-left: 0;
@@ -311,35 +312,35 @@ section .countdown div:not(:first-of-type) {
 }
 
 #slide1 {
-    background-image: url("./Assets/Pictures/rockband1.jpeg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband1.jpeg");
 }
 
 #slide2 {
-    background-image: url("./Assets/Pictures/rockband2.webp");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband2.webp");
 }
 
 #slide3 {
-    background-image: url("./Assets/Pictures/rockband3.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband3.jpg");
 }
 
 #slide4 {
-    background-image: url("./Assets/Pictures/rockband4.1.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/rockband4.1.jpg");
 }
 
 #slide5 {
-    background-image: url("./Assets/Pictures/machines.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/machines.jpg");
 }
 
 #slide6 {
-    background-image: url("./Assets/Pictures/techno4.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/techno4.jpg");
 }
 
 #slide7 {
-    background-image: url("./Assets/Pictures/djscript.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/djscript.jpg");
 }
 
 #slide8 {
-    background-image: url("./Assets/Pictures/techno3.jpg");
+    background-image: url("2023-02-JS-FT-Lyon-P1-BrainForge/Assets/Pictures/techno3.jpg");
 }
 
 .slideInfo {
@@ -355,7 +356,7 @@ section .countdown div:not(:first-of-type) {
 .slideInfo.is-active {
     display: flex;
     height: 56vh;
-    background-color: var(--backgroundColorAltl);
+    background-color: var(--backgroundColorAltLightTransparent);
     background-size: cover;
     backdrop-filter: blur(3px);
     color: var(--textColor);
@@ -368,7 +369,7 @@ section .countdown div:not(:first-of-type) {
 .slideInfo2.is-active {
     display: flex;
     height: 56vh;
-    background-color: var(--backgroundColorAlt);
+    background-color: var(--backgroundColorAltLightTransparent);
     background-size: cover;
     backdrop-filter: blur(3px);
     color: var(--textColor);
@@ -385,9 +386,11 @@ section .countdown div:not(:first-of-type) {
 .slide.is-inactive {
     filter: brightness(90%);
 }
+
 .slide2.is-inactive {
     filter: brightness(90%);
 }
+
 .slide {
     background-size: cover;
     background-repeat: no-repeat;
@@ -627,7 +630,7 @@ section .countdown div:not(:first-of-type) {
 
 /* Début de la page "ticket" */
 
-.closeTicketButton{
+/* .closeTicketButton {
     position: relative;
     width: 1.7rem;
     height: 1.7rem;
@@ -639,7 +642,7 @@ section .countdown div:not(:first-of-type) {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-}
+} */
 
 #ticket {
     position: fixed;
@@ -659,7 +662,7 @@ section .countdown div:not(:first-of-type) {
 }
 
 .ticketContainer>h3 {
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 #ticket.is-active {
@@ -774,6 +777,7 @@ textarea {
     display: inline-block;
     width: 30px;
 }
+
 .footerProg2 img {
     display: inline-block;
     width: 30px;
@@ -782,6 +786,7 @@ textarea {
 .footerProg.is-active {
     display: initial;
 }
+
 .footerProg2.is-active {
     display: initial;
 }
@@ -851,6 +856,7 @@ textarea {
         font-size: 1.3rem;
         text-align: center;
     }
+
     .slideInfo2.is-active {
         height: auto;
         background-color: var(--backgroundColorAltLightTransparent);
@@ -924,7 +930,7 @@ textarea {
     }
 
     .ticketContainer {
-        max-width: 30vw;
+        max-width: 30rem;
         max-height: 80vh;
         margin-left: auto;
         margin-right: auto;
