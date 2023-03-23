@@ -657,6 +657,11 @@ section .countdown div:not(:first-of-type) {
     display: flex;
     flex-direction: column;
 }
+.ticketContainer>h2{
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 3rem;
+}
 
 .ticketContainer>h3 {
     margin-top: 1vh;
@@ -945,7 +950,8 @@ textarea {
     }
 
     .ticketContainer>h2 {
-        padding-top: 1.5rem;
+        padding-top: 30vh;
+        padding-left: 3rem;
     }
 
     #down-arrow-ticket {
