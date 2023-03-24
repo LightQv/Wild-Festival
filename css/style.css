@@ -15,6 +15,9 @@
     --mainColor: rgb(222, 200, 0);
     --textColor: rgb(1, 1, 1);
     --textColorAlt: rgb(254, 254, 254);
+    --backgroundColorDM: rgb(1, 1, 1);
+    --backgroundColorAltLightDM: rgb(129, 129, 129);
+    --textColorDM: rgb(254, 254, 254);
 }
 
 body {
@@ -65,14 +68,17 @@ nav>.navIcon {
 
 .hamburger.is-active:before {
     background-color: var(--backgroundColor);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .hamburger.is-active .bar {
-    background-color: var(--backgroundColor);
+    /* background-color: var(--backgroundColor); */
+    opacity: 0;
 }
 
 .hamburger.is-active:after {
     background-color: var(--backgroundColor);
+    transform: rotate(45deg) translate(-9px, -6px);
 }
 
 nav>.mobileNav {
@@ -931,7 +937,12 @@ textarea {
         margin-left: 15vw;
     }
 
+    #ticket {
+        background: linear-gradient(0.45turn, var(--backgroundColor), var(--backgroundColorAltLight));
+    }
+
     .ticketContainer {
+        background-color: var(--backgroundColor);
         max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
@@ -958,5 +969,39 @@ textarea {
 
     #down-arrow-ticket {
         margin-top: 5rem;
+    }
+}
+
+/* Dark-mode system */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(0.45turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    /* programmation.html */
+    .progBody {
+        background: linear-gradient(0.135turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    .pageTitle {
+        color: var(--textColorDM);
+    }
+
+    /* billetterie.html */
+    .packContainer>h3 {
+        color: var(--textColorDM);
+    }
+
+    .formContainer h3 {
+        color: var(--textColorDM);
+    }
+
+    #ticket {
+        background: linear-gradient(0.45turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    .ticketContainer {
+        background: var(--backgroundColor);
     }
 }
