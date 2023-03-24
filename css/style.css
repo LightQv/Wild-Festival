@@ -15,6 +15,9 @@
     --mainColor: rgb(222, 200, 0);
     --textColor: rgb(1, 1, 1);
     --textColorAlt: rgb(254, 254, 254);
+    --backgroundColorDM: rgb(1, 1, 1);
+    --backgroundColorAltLightDM: rgb(129, 129, 129);
+    --textColorDM: rgb(254, 254, 254);
 }
 
 body {
@@ -958,5 +961,39 @@ textarea {
 
     #down-arrow-ticket {
         margin-top: 5rem;
+    }
+}
+
+/* Dark-mode system */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(0.45turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    /* programmation.html */
+    .progBody {
+        background: linear-gradient(0.135turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    .pageTitle {
+        color: var(--textColorDM);
+    }
+
+    /* billetterie.html */
+    .packContainer>h3 {
+        color: var(--textColorDM);
+    }
+
+    .formContainer h3 {
+        color: var(--textColorDM);
+    }
+
+    #ticket {
+        background: linear-gradient(0.45turn, var(--backgroundColorDM), var(--backgroundColorAltLightDM));
+    }
+
+    .ticketContainer {
+        background: var(--backgroundColor);
     }
 }
