@@ -827,7 +827,7 @@ textarea {
     .eventSummary {
         font-weight: normal;
         line-height: normal;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-top: 44vh;
     }
 
@@ -940,11 +940,12 @@ textarea {
         border: 3px solid;
         border-radius: 0.8rem;
         padding: 2rem;
+        max-height: 85vh;
     }
 
     #codeQR {
         padding: 1rem;
-        height: 25rem;
+        max-width: 20vw;
     }
 
     .ticketContainer>h5 {
