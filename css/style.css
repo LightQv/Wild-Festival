@@ -68,14 +68,17 @@ nav>.navIcon {
 
 .hamburger.is-active:before {
     background-color: var(--backgroundColor);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .hamburger.is-active .bar {
-    background-color: var(--backgroundColor);
+    /* background-color: var(--backgroundColor); */
+    opacity: 0;
 }
 
 .hamburger.is-active:after {
     background-color: var(--backgroundColor);
+    transform: rotate(45deg) translate(-9px, -6px);
 }
 
 nav>.mobileNav {
@@ -934,7 +937,12 @@ textarea {
         margin-left: 15vw;
     }
 
+    #ticket {
+        background: linear-gradient(0.45turn, var(--backgroundColor), var(--backgroundColorAltLight));
+    }
+
     .ticketContainer {
+        background-color: var(--backgroundColor);
         max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
