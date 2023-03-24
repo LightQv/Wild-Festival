@@ -1,4 +1,4 @@
-/* Debut du Script Countdown */
+/* Début du Script Countdown */
 
 function findDate() {
     //Date parameters
